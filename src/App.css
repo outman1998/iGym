@@ -87,10 +87,10 @@ body {
   transition: 0.3s all ease-in-out;
 }
 
-.exercise-card:hover,
+/* .exercise-card:hover,
 .bodyPart-card:hover {
   transform: scale(1.1, 1.1);
-}
+} */
 
 .search-btn:hover {
   color: #FF2625 !important;
@@ -141,4 +141,18 @@ body {
   .exercise-card {
     width: 280px;
   }
+}
+
+
+/* .alice-carousel__prev-btn, .alice-carousel__next-btn {
+} */
+
+.alice-carousel__prev-btn-item {
+  font-size: 35px;
+  color: red !important;
+}
+
+.alice-carousel__next-btn-item {
+  font-size: 35px;
+  color: red !important;
 }
