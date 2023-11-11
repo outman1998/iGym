@@ -12,7 +12,8 @@ export default function Navbar() {
     mt: {sm: '32px', xs: '20px'},
     justifyContent: 'none',
     alignItems: 'center',
-    px:'20px'
+    px:'20px',
+    position: "absolute"
     }} 
     >
         <Typography 
@@ -20,6 +21,7 @@ export default function Navbar() {
         sx={{
           fontSize: {lg: '25px', xs: '18px'},
         }}
+        color="#fff"
         >
           <p>PowerPro</p>
         </Typography>
@@ -30,9 +32,9 @@ export default function Navbar() {
         fontSize="24px"
         alignItems="flex-end"
         >
-            <Link style={{textDecoration: 'none', colo
-        :'#3A1212', borderBottom: '3px solid #FF2325'}}>Home</Link>
-            <a href='#exercises' style={{textDecoration: 'none', color: '#3A1212'}}>Exercises</a>
+            <Link style={{textDecoration: 'none', color
+        :'#fff', borderBottom: '3px solid #FF2325'}}>Home</Link>
+            <a href='#exercises' style={{textDecoration: 'none', color: '#fff'}}>Exercises</a>
         </Stack>
     </Stack>
   )
