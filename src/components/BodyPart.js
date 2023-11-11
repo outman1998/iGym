@@ -1,11 +1,7 @@
 import React from 'react';
 import { Stack, Typography } from '@mui/material';
-import Icon from '../assets/icons/gym.png';
 
-const BodyPart = ({item, setBodyPart, BodyPart, imageSrc}) => 
-
-{
-  console.log(item);
+const BodyPart = ({item, setBodyPart, BodyPart, imageSrc}) => {
   return (
     <Stack
     type="button"
@@ -17,9 +13,12 @@ const BodyPart = ({item, setBodyPart, BodyPart, imageSrc}) =>
       backgroundColor: 'rgba(0, 0, 0, 0.060)',
       width: 'auto',
       cursor: 'pointer',
-      gab: '47px',
       margin: '0px 10px',
       borderRadius: "10px"
+    }}
+    onClick={() => { 
+      setBodyPart(item);
+      window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
     }}
     >
       <img 

@@ -9,20 +9,24 @@ export default function Home() {
   const [exercises, setExercises] = useState([]);
   const [bodyPart, setBodyPart] = useState('all');
 
-
   return (
     <Box>
+
       <HeroBanner />
+      
       <SearchExercises 
+        exercises={exercises}
+        setExercises={setExercises} 
         bodyPart={bodyPart} 
         setBodyPart={setBodyPart} 
-        setExercises={setExercises} 
       />
+
       <Exercises 
-        bodyPart={bodyPart} 
-        setBodyPart={setBodyPart} 
+        exercises={exercises} 
         setExercises={setExercises} 
+        bodyPart={bodyPart} 
       />
+
     </Box>
   )
 }

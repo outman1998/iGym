@@ -1,12 +1,13 @@
 import React from 'react'
 import { Box, Stack, Typography, Button } from '@mui/material';
 import HeroBannerImage from '../assets/images/banner.png'
+import SendIcon from '@mui/icons-material/Send';
 
 export default function HeroBanner() {
   return (
     <Box
     sx={{
-      mt: {lg: '212px', xs: '70px'},
+      mt: {lg: '100px', xs: '70px'},
       ml: {sm: '50px'}
     }}
     position="relative"
@@ -17,16 +18,17 @@ export default function HeroBanner() {
       fontWeight="600"
       fontSize="26px"
       >
-        Fitness Club
+        A world full of exercises
       </Typography>
 
       <Typography
       fontWeight={700}
-      sx={{fontSize: {lg: '44px', xs: '40px'}}}
-      mb="23px"
-      mt="30px"
+      sx={{
+        fontSize: {lg: '64px', xs: '40px'},
+        width: {lg: '50%'}
+      }}
       >
-        Sweat, Smile <br /> And Repeat
+        Discover a healthier you with PowerPro
       </Typography>
 
       <Typography
@@ -34,7 +36,7 @@ export default function HeroBanner() {
       lineHeight="35px"
       mb={4}
       >
-        Check out the most effective exercises
+        The only fitnessapp you'll ever need
       </Typography>
 
       <Button
@@ -42,8 +44,10 @@ export default function HeroBanner() {
       color='error'
       href='#exercises'
       xs={{backgroundColor: '#ff2625', padding: '10px'}}
+      size='large'
+      endIcon={<SendIcon />}
       >
-        Explore exercises
+        Explore application
       </Button>
 
       <Typography
@@ -55,10 +59,10 @@ export default function HeroBanner() {
       }}
       fontSize="200px"
       >
-        Exercise
+        Exercises
       </Typography>
       <img 
-      src={HeroBannerImage} 
+      src={'https://www.exercisebliss.com/wp-content/uploads/2022/09/alexander-jawfox-Kl2t5U6Gkm0-unsplash.jpg'} 
       alt='banner'
       className='hero-banner-img'
       />

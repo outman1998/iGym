@@ -55,7 +55,7 @@ export default function HorizontalScrollbar({ data, setBodyPart }) {
           <BodyPart 
             BodyPart={BodyPart} 
             item={item} 
-            setBodyPart={setBodyPart} 
+            setBodyPart={setBodyPart} // Make sure you are passing the function here
             imageSrc={getImageSrc(item)}
           />
         </Box>

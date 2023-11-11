@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { Stack } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import Logo from '../assets/images/Logo.png'
 export default function Navbar() {
   return (
@@ -11,12 +11,19 @@ export default function Navbar() {
     gap: {sm: '122px', xs: '40px'}, 
     mt: {sm: '32px', xs: '20px'},
     justifyContent: 'none',
+    alignItems: 'center',
     px:'20px'
     }} 
     >
-        <Link to="/">
-        <img src={Logo} alt="logo" style={{width: '48px', height: '48px', margin: '0 20px'}} />
-        </Link>
+        <Typography 
+        to="/"
+        sx={{
+          fontSize: {lg: '25px', xs: '18px'},
+        }}
+        >
+          <p>PowerPro</p>
+        </Typography>
+
         <Stack
         direction="row"
         gap="40px"
