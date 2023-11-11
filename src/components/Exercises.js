@@ -46,6 +46,10 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
       <Typography
       variant='h3'
       mb="46px"
+      fontWeight={700}
+      sx={{
+        fontSize: {lg: '44px', xs: '30px'}
+      }}
       >
         Showing Results
       </Typography>
@@ -56,7 +60,7 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
         gap: {lg: '110px', xs: '50px'}
       }}
       flexWrap="wrap"
-      justifyContent="center"
+      justifyContent="space-between"
       >
         {currentExercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />

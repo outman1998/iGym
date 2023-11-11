@@ -42,10 +42,10 @@ const ExerciseCard = ({exercise}) => {
         </Stack>
         <Typography
         color="#000"
-        fontWeight="bold"
+        fontWeight="light"
         mt="10px"
         textTransform="capitalize"
-        fontSize="22px"
+        fontSize="17px"
         >
           {exercise.name}
         </Typography>
