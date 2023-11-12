@@ -4,88 +4,145 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import {AiFillInstagram, AiOutlineTwitter} from 'react-icons/ai'
+import {BsFacebook} from 'react-icons/bs'
+import {MdEmail, MdMail} from 'react-icons/md'
+import logoe from '../assets/images/logoe.png'
+import { Box } from '@mui/material';
 
 export default function Footer() {
   return (
     <>
-    <div className='bg'>
+      <Box className="box">
 
-      <div className='venstre'>
-        <Typography 
-        fontSize="25px"
-        fontWeight={700}
-        >
-          People often ask
-        </Typography>
-      </div>
+        <div className='first'>
+          <img src={logoe} className='logo' />
 
-      <div className='hoejre'>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Why is rest important in a fitness routine?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          Rest is vital for muscle recovery, preventing overtraining and injuries. It allows the body to repair and grow stronger, enhances performance, and maintains hormonal balance. Incorporating rest days into your fitness routine is key to achieving long-term success and overall well-being.
+          <Typography
+          fontSize="45px"
+          fontWeight={700}
+          color="white"
+          >
+            Start exercising!
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Accordion 1</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>How can I prevent injuries during workouts?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          To prevent injuries during workouts, focus on a thorough warm-up, maintain proper form, progress gradually, listen to your body, incorporate rest days, and stay adequately hydrated.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      </div>
+        </div>
 
-    </div>
+        <div className='second'>
 
-    <div className='footer'>
-      <Typography>
-      Copyright © 2023 Powerpro.com. All rights reserved.
-      </Typography>
+          <div className='flex'>
+            <Typography
+            fontSize="14px"
+            color="#afafaf"
+            marginBottom="10px"
+            >
+            CONTACT US
+            </Typography>
+            <Typography
+            fontSize="35px"
+            fontWeight={700}
+            >
+            powerpro@contact.com
+            </Typography>
+            <Typography
+            fontSize="35px"
+            fontWeight={700}
+            >
+            + 45 3421 7856
+            </Typography>
+            <Typography
+            fontSize="14px"
+            color="#afafaf"
+            marginTop="25px"
+            >
+            FOLLOW US
+            </Typography>
 
-      <div>
-        <ul className='ul'>
+            <AiFillInstagram className='icon' fontSize="20px" />
+            <AiOutlineTwitter className='icon' fontSize="20px" />
+            <BsFacebook className='icon' fontSize="20px" />
+            <MdMail fontSize="20px" />
+
+          </div>
+
+          <div className='accordion'>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon className='iconen' />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Accordion 1</Typography>
+              </AccordionSummary>
+              <AccordionDetails className='color'>
+                <Typography
+                color="white"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon className='iconen' />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Accordion 1</Typography>
+              </AccordionSummary>
+              <AccordionDetails className='color'>
+                <Typography                 
+                color="white"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon className='iconen' />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography>Accordion 1</Typography>
+              </AccordionSummary>
+              <AccordionDetails className='color'>
+                <Typography
+                color="white"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </div>
+
+        </div>
+
+
+      </Box>
+
+      <div className='third'>
+      <p>Copyright © 2023 Powerpro.com. All rights reserved.</p>
+
+      <div className='flexen'>
+        <ul>
           <li>
-            About us
+            About
+          </li>
+          <li>
+            Cookie Preferences
           </li>
           <li>
             Privacy Notice
           </li>
-          <li>
-            Cooke Preferences
-          </li>
         </ul>
       </div>
-    </div>
-  </>
+      </div>
+    </>
+
   );
 }

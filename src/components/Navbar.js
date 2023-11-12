@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Stack, Typography } from '@mui/material';
-import Logo from '../assets/images/Logo.png'
+import Logoe from '../assets/images/logoe.png';
+
 export default function Navbar() {
   return (
     <Stack
@@ -16,15 +17,8 @@ export default function Navbar() {
     position: "absolute"
     }} 
     >
-        <Typography 
-        to="/"
-        sx={{
-          fontSize: {lg: '25px', xs: '18px'},
-        }}
-        color="#fff"
-        >
-          <p>PowerPro</p>
-        </Typography>
+
+      <img width="50px" src={Logoe} />
 
         <Stack
         direction="row"
@@ -32,8 +26,7 @@ export default function Navbar() {
         fontSize="24px"
         alignItems="flex-end"
         >
-            <Link style={{textDecoration: 'none', color
-        :'#fff', borderBottom: '3px solid #FF2325'}}>Home</Link>
+            <Link style={{textDecoration: 'none', color: '#fff'}}>Home</Link>
             <a href='#exercises' style={{textDecoration: 'none', color: '#fff'}}>Exercises</a>
         </Stack>
     </Stack>

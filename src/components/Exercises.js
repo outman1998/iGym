@@ -11,7 +11,9 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
   const exercisesPerPage = 9;
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
+  // you have to map over this currentexercises and not all exercises as we do it right now below in the code
+  // const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
+
 
 
   const paginate = (e, value) => {
@@ -19,21 +21,42 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
     window.scrollTo({top: 1800, behavior: 'smooth'})
   }
 
+  // useEffect(() => {
+  //   const fetchExercisesData = async () => {
+  //     let exerciseData = [];
+
+  //     if(bodyPart === 'all') {
+  //       exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises`, exerciseOptions)
+  //     } else {
+  //       exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions)
+  //     }
+
+  //     setExercises(exerciseData)
+  //   }
+  //   fetchExercisesData();
+  // }, [bodyPart]);
+
   useEffect(() => {
     const fetchExercisesData = async () => {
-      let exerciseData = [];
-
-      if(bodyPart === 'all') {
-        exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises`, exerciseOptions)
-      } else {
-        exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions)
+      try {
+        let exerciseData = [];
+  
+        if (bodyPart === 'all') {
+          exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises`, exerciseOptions);
+        } else {
+          exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions);
+        }
+  
+        setExercises(exerciseData);
+      } catch (error) {
+        // Handle the error, you can log it or show an error message to the user
+        console.error('Error fetching exercise data:', error);
       }
-
-      setExercises(exerciseData)
-    }
+    };
+  
     fetchExercisesData();
   }, [bodyPart]);
-
+  
   return (
     <Box 
     id="exercises"
@@ -62,7 +85,7 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
       flexWrap="wrap"
       justifyContent="space-between"
       >
-        {currentExercises.map((exercise, index) => (
+        {exercises.length > 0 && exercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />
         ))}
       </Stack>

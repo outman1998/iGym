@@ -95,7 +95,12 @@ body {
 .search-btn:hover {
   color: #FF2625 !important;
   border: 1px solid #FF2625 !important;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+
 }
+
+
 
 .exercise-video {
   display: flex;
@@ -157,38 +162,74 @@ body {
   color: red !important;
 }
 
-.bg {
-  margin: 100px 20px;
-  display: flex;
+
+.box {
+  background-color: #232323;
+  padding: 0px 50px;
 }
 
-.venstre {
-  width: 50%;
+.logo {
+  width: 80px;
 }
 
-.hoejre {
-  width: 50%;
-}
-
-.footer {
+.first {
   display: flex;
   justify-content: space-between;
-  margin: 20px 10px;
-  padding-top: 20px;
-  background-color: white;
+  align-items: center;
+  padding: 80px 0px;
+  border-bottom: 2px solid rgba(254, 254, 254, 0.089);
 }
 
-.footeren {
-  margin: 10px 0px;
-}
-
-.ul {
+.second {
   display: flex;
-  list-style-type: none;  
-
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 80px 0px;
 }
 
-.ul li {
-  margin: 0px 12px;
+.second .icon {
+  margin-right: 25px;
+  margin-top: 10px;
 }
 
+.third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: black;
+  padding: 20px 30px;
+}
+
+.third .flexen ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.third .flexen ul li {
+  margin-right: 15px;
+}
+
+.accordion {
+  width: 50%;
+}
+
+#panel1a-header {
+  background-color: #232323f8;
+  color: white;
+}
+
+.iconen {
+  color: white;
+}
+
+.color {
+  background-color: #232323;
+}
+
+div#panel1a-content {
+  background: #232323;
+}
