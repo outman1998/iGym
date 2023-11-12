@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -11,6 +11,8 @@ import logoe from '../assets/images/logoe.png'
 import { Box } from '@mui/material';
 
 export default function Footer() {
+
+
   return (
     <>
       <Box className="box">
@@ -19,11 +21,11 @@ export default function Footer() {
           <img src={logoe} className='logo' />
 
           <Typography
-          fontSize="45px"
-          fontWeight={700}
-          color="white"
+            fontSize="45px"
+            fontWeight={700}
+            color="white"
           >
-            Start exercising!
+            <span className='s'>S</span>tart exercising!
           </Typography>
         </div>
 
