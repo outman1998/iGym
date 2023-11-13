@@ -17,8 +17,7 @@ export default function Footer() {
     <>
       <Box className="box">
 
-        <Box 
-        className='first'
+        <Box className='first'
         sx={{
           display: {xs: 'block', sm: 'block', md: 'flex', lg: 'flex'},
           justifyContent: 'space-between',
@@ -41,7 +40,15 @@ export default function Footer() {
           </Typography>
         </Box>
 
-        <div className='second'>
+        <Box className='second'
+        sx={{
+          display: {xs: 'block', sm: 'block', md: 'flex', lg: 'flex'},
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          color: 'white',
+          padding: '80px 0px'
+        }}
+        >
 
           <div className='flex'>
             <Typography
@@ -78,7 +85,12 @@ export default function Footer() {
 
           </div>
 
-          <div className='accordion'>
+          <Box className='accordion'
+          sx={{
+            width: {xs: '100%', sm: '100%', md: '50%', lg: '50%'},
+            marginTop: {xs: '50px', sm: '50px', md: '0px', lg: '0px'}
+          }}
+          >
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon className='iconen' />}
@@ -132,30 +144,59 @@ export default function Footer() {
                 </Typography>
               </AccordionDetails>
             </Accordion>
-          </div>
+          </Box>
 
-        </div>
-
+        </Box>
 
       </Box>
 
-      <div className='third'>
-      <p>Copyright © 2023 Powerpro.com. All rights reserved.</p>
+      <Box className='third'
+      sx={{
+        display: {xs: 'block', sm: 'block', md: 'flex', lg: 'flex'},
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        color: "#afafaf",
+        backgroundColor: 'black',
+        padding: '20px 30px',
+        textAlign: 'center'
+      }}
+      >
 
-      <div className='flexen'>
-        <ul>
-          <li>
+        <Typography
+        sx={{
+          marginBottom: {xs: '10px', sm: '10px', md: '0px', lg: '0px'},
+          fontSize: '13px'
+        }}
+        >
+          Copyright © 2023 Powerpro.com. All rights reserved
+        </Typography>
+
+        <Box
+        sx={{
+          display: {xs: 'flex', sm: 'flex', md: 'flex', lg: 'flex'},
+          justifyContent: 'center',
+        }}
+        >
+          <Typography
+          mr="20px"
+          fontSize="12px"
+          >
             About
-          </li>
-          <li>
+          </Typography>
+          <Typography
+          mr="20px"
+          fontSize="12px"
+          >
             Cookie Preferences
-          </li>
-          <li>
-            Privacy Notice
-          </li>
-        </ul>
-      </div>
-      </div>
+          </Typography>
+          <Typography
+          fontSize="12px"
+          >
+            Membership
+          </Typography>
+        </Box>
+
+      </Box>
     </>
 
   );
