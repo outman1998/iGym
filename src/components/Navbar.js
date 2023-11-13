@@ -28,6 +28,8 @@ export default function Navbar() {
         >
             <Link style={{textDecoration: 'none', color: '#fff'}}>Home</Link>
             <a href='#exercises' style={{textDecoration: 'none', color: '#fff'}}>Exercises</a>
+            <a href='#exercises' style={{textDecoration: 'none', color: '#fff'}}>About</a>
+            <a href='#exercises' style={{textDecoration: 'none', color: '#fff'}}>Exslusive</a>
         </Stack>
     </Stack>
   )

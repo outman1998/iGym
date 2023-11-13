@@ -73,7 +73,7 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
       mb="50px"
       textAlign="center"
       >
-        Your Personalized Fitness <br /> Adventure Starts Here
+        Find the Perfect Workout <br /> For Your Target Muscle Group
       </Typography>
 
       <Box
@@ -103,12 +103,12 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
         sx={{
           bgcolor: '#FF2625',
           color: '#fff',
-          textTransform: 'none',
           width: {lg: '175px', xs: '80px'},
           fontSize: {lg: '20px', xs: '14px'},
           height: '56px',
           position: 'absolute',
-          right: '0'
+          right: '0',
+          textTransform: 'inherit'
         }}
         onClick={handleSearch}
         >

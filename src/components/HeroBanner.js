@@ -122,6 +122,11 @@ export default function HeroBanner() {
       xs={{
         backgroundColor: '#ff2625', 
         padding: '10px',
+        textTransform: 'lowercase',
+      }}
+      style={{
+        textTransform: 'inherit',
+        fontSize: '18px'
       }}
       size='large'
       endIcon={<SendIcon />}

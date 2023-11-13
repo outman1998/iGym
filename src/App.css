@@ -238,72 +238,29 @@ div#panel1a-content {
   border-bottom: 4px solid white; /* Adjust the border style as needed */
 }
 
-
-
-
-
-
-
-
-
-
-.flexen {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  padding: 0px 100px;
-}
-
 .flexen > .et {
-  margin: 0px 5px;
-  text-align: center;
-  padding: 30px 50px;
-  width: 25%;
-  border: 2px solid black;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin: 0px 0px 0px 0px;
   --mask: radial-gradient(circle 20px at 20px 20px, transparent 20px, #000 21px) -20px -20px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
 
 .flexen > .to {
-  margin: 0px 5px;
-  text-align: center;
-  padding: 30px 50px;
-  width: 25%;
-  border: 2px solid black;
-  border-right: none;
-  border-left: none;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin: 0px 0px 0px 0px;
   --mask: radial-gradient(circle 20px at 20px 20px, transparent 20px, #000 21px) -20px -20px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
 
 .flexen > .tre {
-  margin: 0px 5px;
-  text-align: center;
-  padding: 30px 50px;
-  width: 25%;
-  border: 2px solid black;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin: 0px 0px 0px 0px;
   --mask: radial-gradient(circle 20px at 20px 20px, transparent 20px, #000 21px) -20px -20px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
 
 .flexen > .fire {
-  margin: 0px 5px;
-  text-align: center;
-  padding: 30px 50px;
-  width: 25%;
-  border: 2px solid black;
-  border-left: none;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin: 0px 0px 0px 0px;
   --mask: radial-gradient(circle 20px at 20px 20px, transparent 20px, #000 21px) -20px -20px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
@@ -313,4 +270,24 @@ div#panel1a-content {
 .flexen > div > p:first-child {
   font-size: 65px;
   font-weight: 700;
+}
+
+.bg {
+  margin-top: 100px;
+  position: relative;
+  background-color: black;
+}
+
+.abs {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.pic {
+  height: 600px;
+}
+
+.knap {
+  background-color: red;
 }
