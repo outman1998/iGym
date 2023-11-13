@@ -17,17 +17,29 @@ export default function Footer() {
     <>
       <Box className="box">
 
-        <div className='first'>
+        <Box 
+        className='first'
+        sx={{
+          display: {xs: 'block', sm: 'block', md: 'flex', lg: 'flex'},
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '80px 0px',
+          borderBottom: '2px solid rgba(254, 254, 254, 0.089)'
+        }}
+        >
           <img src={logoe} className='logo' />
 
           <Typography
-            fontSize="45px"
-            fontWeight={700}
-            color="white"
+          sx={{
+            fontSize:"45px",
+            fontWeight:'700',
+            color:"white",
+            marginTop: {xs: '35px', sm: '35px', md: '0', lg: '0'}
+          }}
           >
             <span className='s'>S</span>tart exercising!
           </Typography>
-        </div>
+        </Box>
 
         <div className='second'>
 

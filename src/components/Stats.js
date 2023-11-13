@@ -26,8 +26,7 @@ export default function Stats() {
     justifyContent="center"
     padding="0px 100px"
     >
-      <Box 
-      className='et'
+      <Box className='et boxen'
       sx={{
         width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
         margin: 'auto',
@@ -43,7 +42,7 @@ export default function Stats() {
         <Typography>YEARS OF EXPERIENCE</Typography>
       </Box>
 
-      <Box className='to'
+      <Box className='to boxen'
       sx={{
         width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
         margin: 'auto',
@@ -59,7 +58,7 @@ export default function Stats() {
         <Typography>SKILLED TRAINERS</Typography>
       </Box>
 
-      <Box className='tre'
+      <Box className='tre boxen'
       sx={{
         width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
         margin: 'auto',
@@ -74,7 +73,7 @@ export default function Stats() {
         <Typography>CALORIES BURNED</Typography>
       </Box>
 
-      <Box className='fire'
+      <Box className='fire boxen'
       sx={{
         width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
         margin: 'auto',
@@ -88,16 +87,34 @@ export default function Stats() {
       </Box>
     </Box>
 
-  <div className='bg'>
-    <img className='pic' width="100%" src={billed} />
+  <Box 
+  className='bg'
+  sx={{
+    marginTop: '100px',
+    position: 'relative',
+    backgroundColor: 'black'
+  }}
+  >
+    <img
+    className='pic' 
+    width="100%" 
+    src={billed}
+    />
     
-    <Box className='abs'>
+    <Box 
+    className='abs'
+    sx={{
+      position: 'absolute',
+      top: '30%',
+      left: {xs: '4%', sm: '10%', md: '20%', lg: '20%'} 
+    }}
+    >
     <Typography
     fontSize="45px"
     color="white"
     fontWeight={700}
     sx={{
-      width: {lg: '50%', md: '50%', sm: '50%'}
+      width: {xs: '100%', sm: '80%', md: '80%', lg: '50%'} 
     }}
     >
     Achieve your training goals with the right plan, not with luck.
@@ -117,7 +134,7 @@ export default function Stats() {
     </Button>
     </Box>
 
-  </div>
+  </Box>
   </>
 
   )
