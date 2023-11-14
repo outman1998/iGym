@@ -97,7 +97,7 @@ export default function Footer() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Why is the Application for Free?</Typography>
+                <Typography>Why is the application for free?</Typography>
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography
@@ -114,7 +114,7 @@ export default function Footer() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>How to Start a Fitness Routine?</Typography>
+                <Typography>How to start a fitness routine?</Typography>
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography                 
@@ -131,7 +131,7 @@ export default function Footer() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Preventing Injuries in Your Fitness Journey</Typography>
+                <Typography>Preventing injuries in your fitness journey</Typography>
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography

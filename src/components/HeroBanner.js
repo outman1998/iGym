@@ -133,6 +133,92 @@ export default function HeroBanner() {
       >
         Explore application
       </Button>
+
+      <div 
+      className='mouse_scroll'
+      style={{
+        paddingTop: '40px'
+      }}
+      >
+
+        <div
+          className='mouse'
+          style={{
+            height: '42px',
+            width: '24px',
+            borderRadius: '14px',
+            transform: 'none',
+            border: '2px solid #fff',
+          }}
+        >
+          <div
+            className='wheel'
+            style={{
+              border: '2px solid #fff',
+              color: 'white',
+              display: 'block',
+              margin: '5px auto',
+              background: '#fff',
+              position: 'relative',
+              height: '4px',
+              width: '4px',
+              borderRadius: '8px',
+              animation: 'continuousBounce .6s linear infinite',
+            }}
+          ></div>
+        </div>
+
+        <span
+        style={{
+          marginTop: '-1px',
+          display: 'block',
+          transform: 'rotate(45deg)',
+          borderRight: '2px solid #fff',
+          borderBottom: '2px solid #fff',
+          margin: '0 0 3px 4px',
+          width: '16px',
+          height: '16px',
+          animation: 'fadeeAnimation 2s infinite', // Adjust the duration
+
+        }}
+        >
+        </span>
+
+        <span
+        style={{
+          marginTop: '-1px',
+          display: 'block',
+          transform: 'rotate(45deg)',
+          borderRight: '2px solid #fff',
+          borderBottom: '2px solid #fff',
+          margin: '-7px 0 3px 4px',
+          width: '16px',
+          height: '16px',
+          animation: 'fadeeAnimation 2s infinite', // Adjust the duration
+          animationDelay: '.2s'
+        }}
+        >
+        </span>
+
+        <span
+        style={{
+          marginTop: '-1px',
+          display: 'block',
+          transform: 'rotate(45deg)',
+          borderRight: '2px solid #fff',
+          borderBottom: '2px solid #fff',
+          margin: '-7px 0 3px 4px',
+          width: '16px',
+          height: '16px',
+          animation: 'fadeeAnimation 2s infinite', // Adjust the duration
+          animationDelay: '.3s'
+        }}
+        >
+        </span>
+
+      </div>
+
+
       </div>
 
     </Box>
