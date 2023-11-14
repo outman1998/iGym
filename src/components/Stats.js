@@ -14,6 +14,7 @@ export default function Stats() {
       pb="50px"
       pt="50px"
       textAlign="center"
+      
       >
         Your Personalized Fitness <br /> Adventure Starts Here
       </Typography>
@@ -38,7 +39,15 @@ export default function Stats() {
 
       }}
       >
-        <Typography>3</Typography>
+        <Typography
+        sx={{
+          WebkitTextFillColor: 'transparent',
+          WebkitTextStrokeWidth: '3px',
+          WebkitTextStrokeColor: 'black'
+        }}
+        >
+          3
+        </Typography>
         <Typography>YEARS OF EXPERIENCE</Typography>
       </Box>
 
@@ -54,7 +63,15 @@ export default function Stats() {
 
       }}
       >
-        <Typography>5</Typography>
+        <Typography
+          sx={{
+            WebkitTextFillColor: 'transparent',
+            WebkitTextStrokeWidth: '3px',
+            WebkitTextStrokeColor: 'black'
+          }}
+        >
+          5
+        </Typography>
         <Typography>SKILLED TRAINERS</Typography>
       </Box>
 
@@ -69,7 +86,15 @@ export default function Stats() {
         borderRight: {xs: '2px solid black', sm: '2px solid black', md: 'none', lg: 'none'}
       }}
       >
-        <Typography>43K</Typography>
+        <Typography
+        sx={{
+          WebkitTextFillColor: 'transparent',
+          WebkitTextStrokeWidth: '3px',
+          WebkitTextStrokeColor: 'black'
+        }}
+        >
+          43K
+        </Typography>
         <Typography>CALORIES BURNED</Typography>
       </Box>
 
@@ -82,7 +107,15 @@ export default function Stats() {
         border: '2px solid black'
       }}
       >
-        <Typography>88</Typography>
+        <Typography
+        sx={{
+          WebkitTextFillColor: 'transparent',
+          WebkitTextStrokeWidth: '3px',
+          WebkitTextStrokeColor: 'black'
+        }}
+        >
+          88
+        </Typography>
         <Typography>HAPPY MEMBERS</Typography>
       </Box>
     </Box>
@@ -122,10 +155,12 @@ export default function Stats() {
 
     <Button
     style={{
-      backgroundColor: "white",
+      marginTop: '10px',
       fontSize: "17px",
       color: 'black',
-      textTransform: 'inherit'
+      textTransform: 'inherit',
+      border: '1px solid white',
+      backgroundColor: 'white'
     }}
     variant="contained"
     endIcon={<SendIcon />}

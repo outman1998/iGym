@@ -95,16 +95,16 @@ export default function HeroBanner() {
       color="#fff"
       fontSize="25px"
       >
-        A free world full of exercises
+        A Free World Full Of Exercises
       </Typography>
       <Typography
       color="#fff"
       sx={{
         fontSize:{
-          xs: '40px',
+          xs: '50px',
           sm: '50px',
           md: '65px',
-          lg: '65px'
+          lg: '75px'
         },
         fontWeight: 700,
         marginBottom: "10px",
@@ -112,27 +112,35 @@ export default function HeroBanner() {
         paddingTop: 0
       }}
       >
-        Get fit, stay strong & motivated!
+        WE HELP YOU ACHIEVE <br /> 
+        <span
+        style={{
+          WebkitTextFillColor: 'transparent',
+          WebkitTextStrokeWidth: '2px',
+          WebkitTextStrokeColor: 'white',
+          color: 'blue'
+        }}
+        >
+          YOUR GOALS
+        </span>
       </Typography>
-
+{/* 
       <Button
-      variant='contained'
-      color='error'
+      variant='outlined'
       href='#exercises'
-      xs={{
-        backgroundColor: '#ff2625', 
-        padding: '10px',
-        textTransform: 'lowercase',
-      }}
       style={{
         textTransform: 'inherit',
-        fontSize: '18px'
+        fontSize: '18px',
+        borderRadius: '50px',
+        fontSize: '18px',
+        border: '2px solid white',
+        color: 'white'
       }}
       size='large'
-      endIcon={<SendIcon />}
+      // endIcon={<SendIcon />}
       >
-        Explore application
-      </Button>
+        Explore
+      </Button> */}
 
       <div 
       className='mouse_scroll'
