@@ -61,9 +61,10 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
     <Box 
     id="exercises"
     sx={{
-      mt: {lg: '110px'}
+      pt: {lg: '110px'},
+      backgroundColor: 'white'
     }}
-    mt="50px"
+    pt="50px"
     p="20px"
     >
       <Typography

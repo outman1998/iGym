@@ -60,17 +60,19 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
   return (
     <Stack 
     alignItems="center" 
-    mt="37px" 
+    pt="37px" 
     justifyContent="center" 
     p="20px"
     width="100"
+    backgroundColor= 'white'
     >
       <Typography
       fontWeight={700}
       sx={{
         fontSize: {lg: '44px', xs: '30px'}
       }}
-      mb="50px"
+      pb="50px"
+      pt="50px"
       textAlign="center"
       >
         Find the Perfect Workout <br /> For Your Target Muscle Group
@@ -78,7 +80,7 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
 
       <Box
       position="relative"
-      mb="72px"
+      pb="72px"
       >
         <TextField
         sx={{

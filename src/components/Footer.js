@@ -97,14 +97,13 @@ export default function Footer() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Accordion 1</Typography>
+                <Typography>Why is the Application for Free?</Typography>
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography
                 color="white"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  Our commitment to promoting fitness and well-being for everyone is the driving force behind offering this application for free. We believe that access to valuable fitness information and tools should be available to all individuals, fostering a healthier community without any financial barriers. Our goal is to support and inspire people on their fitness journeys by making resources easily accessible.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -115,14 +114,13 @@ export default function Footer() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Accordion 1</Typography>
+                <Typography>How to Start a Fitness Routine?</Typography>
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography                 
                 color="white"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                Starting a fitness routine can be overwhelming. Begin by setting realistic goals, choosing activities you enjoy, and gradually increasing intensity. Incorporate a mix of cardio, strength training, and flexibility exercises for a well-rounded routine.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -133,14 +131,13 @@ export default function Footer() {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <Typography>Accordion 1</Typography>
+                <Typography>Preventing Injuries in Your Fitness Journey</Typography>
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography
                 color="white"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                  malesuada lacus ex, sit amet blandit leo lobortis eget.
+                Preventing injuries in your fitness journey involves proper warm-ups, maintaining good form, incorporating variety in your routine, listening to your body, and ensuring adequate rest. These steps help minimize the risk of strains and injuries, allowing for a safe and effective fitness experience.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -155,8 +152,8 @@ export default function Footer() {
         display: {xs: 'block', sm: 'block', md: 'flex', lg: 'flex'},
         justifyContent: 'space-between',
         alignItems: 'center',
-        color: "#afafaf",
-        backgroundColor: 'black',
+        color: "black",
+        backgroundColor: 'white',
         padding: '20px 30px',
         textAlign: 'center'
       }}

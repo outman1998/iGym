@@ -5,14 +5,14 @@ import SendIcon from '@mui/icons-material/Send';
 
 export default function Stats() {
   return (
-    <>
+    <div style={{backgroundColor: 'white'}}>
       <Typography
       fontWeight={700}
       sx={{
         fontSize: {lg: '44px', xs: '30px'}
       }}
-      mb="50px"
-      mt="50px"
+      pb="50px"
+      pt="50px"
       textAlign="center"
       >
         Your Personalized Fitness <br /> Adventure Starts Here
@@ -135,7 +135,7 @@ export default function Stats() {
     </Box>
 
   </Box>
-  </>
+  </div>
 
   )
 }
