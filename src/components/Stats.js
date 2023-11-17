@@ -5,172 +5,194 @@ import SendIcon from '@mui/icons-material/Send';
 
 export default function Stats() {
   return (
-    <div style={{backgroundColor: 'white'}}>
+    <div style={{backgroundColor: '#111111'}}>
+
       <Typography
       fontWeight={700}
       sx={{
         fontSize: {lg: '44px', xs: '30px'}
       }}
-      pb="50px"
       pt="50px"
       textAlign="center"
+      color= 'white'
       
       >
-        Your Personalized Fitness <br /> Adventure Starts Here
+        PUSH YOUR LIMITS FORWARD
       </Typography>
 
-    <Box
-    className="flexen"
-    sx={{
-      display: {sm: 'block', md: 'flex', lg: 'flex'}
-    }}
-    justifyContent="center"
-    padding="0px 100px"
-    >
-      <Box className='et boxen'
+      <Typography
+      color="#afafaf"
+      fontWeight={500}
+      fontSize="18px"
+      textAlign="center"
+      width="100%"
       sx={{
-        width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
-        margin: 'auto',
-        textAlign: 'center',
-        padding: '30px 0px',
-        border: '2px solid black',
-        borderBottom: {xs: 'none', sm: 'none', md: '2px solid black', lg: '2px solid black'},
-        borderRight: {xs: '2px solid black', sm: '2px solid black', md: 'none', lg: 'none'}
-
+        padding: {
+          xs: '0px 50px 50px 50px', 
+          sm: '0px 100px 50px 100px', 
+          md: '0px 300px 50px 300px', 
+          lg: '0px 400px 50px 400px'
+        }
       }}
       >
-        <Typography
+      Train with the best experts in bodybuilding field. Your results will speak to themselves. Try the latest exercising trends, innovative equipment and special nutrition plans.
+      </Typography>
+
+      <Box
+      className="flexen"
+      sx={{
+        display: {sm: 'block', md: 'flex', lg: 'flex'},
+        color: 'white'
+      }}
+      justifyContent="center"
+      padding="0px 100px"
+      >
+        <Box className='et boxen'
         sx={{
-          WebkitTextFillColor: 'transparent',
-          WebkitTextStrokeWidth: '3px',
-          WebkitTextStrokeColor: 'black'
+          width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
+          margin: 'auto',
+          textAlign: 'center',
+          padding: '30px 0px',
+          border: '2px solid white',
+          borderBottom: {xs: 'none', sm: 'none', md: '2px solid white', lg: '2px solid white'},
+          borderRight: {xs: '2px solid white', sm: '2px solid white', md: 'none', lg: 'none'},
+          color: 'white'
+
         }}
         >
-          3
-        </Typography>
-        <Typography>YEARS OF EXPERIENCE</Typography>
-      </Box>
-
-      <Box className='to boxen'
-      sx={{
-        width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
-        margin: 'auto',
-        textAlign: 'center',
-        padding: '30px 0px',
-        border: '2px solid black',
-        borderBottom: {xs: 'none', sm: 'none', md: '2px solid black', lg: '2px solid black'},
-        borderRight: {xs: '2px solid black', sm: '2px solid black', md: 'none', lg: 'none'}
-
-      }}
-      >
-        <Typography
+          <Typography
           sx={{
             WebkitTextFillColor: 'transparent',
             WebkitTextStrokeWidth: '3px',
-            WebkitTextStrokeColor: 'black'
+            WebkitTextStrokeColor: '#c63d2f'
           }}
-        >
-          5
-        </Typography>
-        <Typography>SKILLED TRAINERS</Typography>
-      </Box>
+          >
+            3
+          </Typography>
+          <Typography color="#afafaf">YEARS OF EXPERIENCE</Typography>
+        </Box>
 
-      <Box className='tre boxen'
-      sx={{
-        width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
-        margin: 'auto',
-        textAlign: 'center',
-        padding: '30px 0px',
-        border: '2px solid black',
-        borderBottom: {xs: 'none', sm: 'none', md: '2px solid black', lg: '2px solid black'},
-        borderRight: {xs: '2px solid black', sm: '2px solid black', md: 'none', lg: 'none'}
-      }}
-      >
-        <Typography
+        <Box className='to boxen'
         sx={{
-          WebkitTextFillColor: 'transparent',
-          WebkitTextStrokeWidth: '3px',
-          WebkitTextStrokeColor: 'black'
+          width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
+          margin: 'auto',
+          textAlign: 'center',
+          padding: '30px 0px',
+          border: '2px solid white',
+          borderBottom: {xs: 'none', sm: 'none', md: '2px solid white', lg: '2px solid white'},
+          borderRight: {xs: '2px solid white', sm: '2px solid white', md: 'none', lg: 'none'}
+
         }}
         >
-          43K
-        </Typography>
-        <Typography>CALORIES BURNED</Typography>
-      </Box>
+          <Typography
+            sx={{
+              WebkitTextFillColor: 'transparent',
+              WebkitTextStrokeWidth: '3px',
+              WebkitTextStrokeColor: '#c63d2f'
+            }}
+          >
+            5
+          </Typography>
+          <Typography color="#afafaf">SKILLED TRAINERS</Typography>
+        </Box>
 
-      <Box className='fire boxen'
-      sx={{
-        width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
-        margin: 'auto',
-        textAlign: 'center',
-        padding: '30px 0px',
-        border: '2px solid black'
-      }}
-      >
-        <Typography
+        <Box className='tre boxen'
         sx={{
-          WebkitTextFillColor: 'transparent',
-          WebkitTextStrokeWidth: '3px',
-          WebkitTextStrokeColor: 'black'
+          width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
+          margin: 'auto',
+          textAlign: 'center',
+          padding: '30px 0px',
+          border: '2px solid white',
+          borderBottom: {xs: 'none', sm: 'none', md: '2px solid white', lg: '2px solid white'},
+          borderRight: {xs: '2px solid white', sm: '2px solid white', md: 'none', lg: 'none'}
         }}
         >
-          88
-        </Typography>
-        <Typography>HAPPY MEMBERS</Typography>
+          <Typography
+          sx={{
+            WebkitTextFillColor: 'transparent',
+            WebkitTextStrokeWidth: '3px',
+            WebkitTextStrokeColor: '#c63d2f'
+          }}
+          >
+            43K
+          </Typography>
+          <Typography color="#afafaf">CALORIES BURNED</Typography>
+        </Box>
+
+        <Box className='fire boxen'
+        sx={{
+          width: {xs: '70%', sm: '50%', md: '50%', lg: '25%'},
+          margin: 'auto',
+          textAlign: 'center',
+          padding: '30px 0px',
+          border: '2px solid white'
+        }}
+        >
+          <Typography
+          sx={{
+            WebkitTextFillColor: 'transparent',
+            WebkitTextStrokeWidth: '3px',
+            WebkitTextStrokeColor: '#c63d2f'
+          }}
+          >
+            88
+          </Typography>
+          <Typography color="#afafaf">HAPPY MEMBERS</Typography>
+        </Box>
       </Box>
-    </Box>
 
-  <Box 
-  className='bg'
-  sx={{
-    marginTop: '100px',
-    position: 'relative',
-    backgroundColor: 'black'
-  }}
-  >
-    <img
-    className='pic' 
-    width="100%" 
-    src={billed}
-    />
-    
-    <Box 
-    className='abs'
-    sx={{
-      position: 'absolute',
-      top: '30%',
-      left: {xs: '4%', sm: '10%', md: '20%', lg: '20%'} 
-    }}
-    >
-    <Typography
-    fontSize="45px"
-    color="white"
-    fontWeight={700}
-    sx={{
-      width: {xs: '100%', sm: '80%', md: '80%', lg: '50%'} 
-    }}
-    >
-    Achieve your training goals with the right plan, not with luck.
-    </Typography>
+      <Box 
+      className='bg'
+      sx={{
+        marginTop: '100px',
+        position: 'relative',
+        backgroundColor: 'rgb(17, 17, 17)'
+      }}
+      >
+        <img
+        className='pic' 
+        width="100%" 
+        src={billed}
+        />
+        
+        <Box 
+        className='abs'
+        sx={{
+          position: 'absolute',
+          top: '30%',
+          left: {xs: '4%', sm: '10%', md: '20%', lg: '20%'} 
+        }}
+        >
+        <Typography
+        fontSize="45px"
+        color="white"
+        fontWeight={700}
+        sx={{
+          width: {xs: '100%', sm: '80%', md: '80%', lg: '50%'} 
+        }}
+        >
+        Achieve your training goals with the right plan, not with luck.
+        </Typography>
 
-    <Button
-    style={{
-      marginTop: '10px',
-      fontSize: "17px",
-      color: 'black',
-      textTransform: 'inherit',
-      border: '1px solid white',
-      backgroundColor: 'white'
-    }}
-    variant="contained"
-    endIcon={<SendIcon />}
-    >
-      Become member
-    </Button>
-    </Box>
+        <Button
+        style={{
+          marginTop: '10px',
+          fontSize: "17px",
+          color: 'black',
+          textTransform: 'inherit',
+          border: '1px solid white',
+          backgroundColor: 'white'
+        }}
+        variant="contained"
+        endIcon={<SendIcon />}
+        >
+          Become member
+        </Button>
+        </Box>
 
-  </Box>
-  </div>
+      </Box>
+
+    </div>
 
   )
 }
