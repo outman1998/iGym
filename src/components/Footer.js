@@ -15,7 +15,9 @@ export default function Footer() {
 
   return (
     <>
-      <Box className="box">
+      <Box className="box"
+      backgroundColor= '#1b1b1b'
+      >
 
         <Box className='first'
         sx={{
@@ -101,7 +103,7 @@ export default function Footer() {
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography
-                color="white"
+                color="#afafaf"
                 >
                   Our commitment to promoting fitness and well-being for everyone is the driving force behind offering this application for free. We believe that access to valuable fitness information and tools should be available to all individuals, fostering a healthier community without any financial barriers. Our goal is to support and inspire people on their fitness journeys by making resources easily accessible.
                 </Typography>
@@ -118,7 +120,7 @@ export default function Footer() {
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography                 
-                color="white"
+                color="#afafaf"
                 >
                 Starting a fitness routine can be overwhelming. Begin by setting realistic goals, choosing activities you enjoy, and gradually increasing intensity. Incorporate a mix of cardio, strength training, and flexibility exercises for a well-rounded routine.
                 </Typography>
@@ -135,7 +137,7 @@ export default function Footer() {
               </AccordionSummary>
               <AccordionDetails className='color'>
                 <Typography
-                color="white"
+                color="#afafaf"
                 >
                 Preventing injuries in your fitness journey involves proper warm-ups, maintaining good form, incorporating variety in your routine, listening to your body, and ensuring adequate rest. These steps help minimize the risk of strains and injuries, allowing for a safe and effective fitness experience.
                 </Typography>
@@ -152,8 +154,8 @@ export default function Footer() {
         display: {xs: 'block', sm: 'block', md: 'flex', lg: 'flex'},
         justifyContent: 'space-between',
         alignItems: 'center',
-        color: "black",
-        backgroundColor: 'white',
+        color: "white",
+        backgroundColor: '#111111',
         padding: '20px 30px',
         textAlign: 'center'
       }}

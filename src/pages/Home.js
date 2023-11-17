@@ -4,6 +4,7 @@ import HeroBanner from '../components/HeroBanner';
 import SearchExercises from '../components/SearchExercises';
 import Exercises from '../components/Exercises';
 import Stats from '../components/Stats';
+import AboutUs from '../components/AboutUs';
 
 export default function Home() {
   const [exercises, setExercises] = useState([]);
@@ -16,8 +17,10 @@ export default function Home() {
 
       <HeroBanner />
       <Stats />
+
+      <AboutUs />
       
-      <SearchExercises 
+      {/* <SearchExercises 
         exercises={exercises}
         setExercises={setExercises} 
         bodyPart={bodyPart} 
@@ -28,7 +31,7 @@ export default function Home() {
         exercises={exercises} 
         setExercises={setExercises} 
         bodyPart={bodyPart} 
-      />
+      /> */}
 
     </Box>
   )

@@ -13,6 +13,7 @@ export default function HeroBanner() {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundAttachment: 'fixed'
   };
 
   return (
@@ -93,7 +94,7 @@ export default function HeroBanner() {
       >
       <Typography
       color="#fff"
-      fontSize="25px"
+      fontSize="22px"
       >
         A Free World Full Of Exercises
       </Typography>
@@ -117,7 +118,7 @@ export default function HeroBanner() {
         style={{
           WebkitTextFillColor: 'transparent',
           WebkitTextStrokeWidth: '2px',
-          WebkitTextStrokeColor: 'white',
+          WebkitTextStrokeColor: '#c63d2f',
           color: 'blue'
         }}
         >
