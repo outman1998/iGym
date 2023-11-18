@@ -8,7 +8,7 @@ const AboutUs = () => {
     className='parent'
     style={{
         backgroundColor: '#111111',
-        padding: '50px 0px 70px 0px'
+        padding: '80px 0px 100px 0px'
     }}>
         <div
         style={{
@@ -23,7 +23,7 @@ const AboutUs = () => {
                 color: 'white'
             }}
             >
-                Our Story
+                OUR STORY
             </Typography>
             <Typography
             sx={{
@@ -37,7 +37,7 @@ const AboutUs = () => {
                 }        
             }}
             >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            At PowerPro, we understand that the path to a healthier lifestyle is unique for each individual. Our story began with a simple yet powerful idea: to create a fitness platform that breaks down barriers and makes exercise accessible to everyone, regardless of age, fitness level, or location.
             </Typography>
         </div>
 
@@ -53,8 +53,8 @@ const AboutUs = () => {
             padding: {
                 xs: '50px 50px 0px 50px',
                 sm: '50px 50px 0px 50px',
-                md: '50px 100px 0px 50px',
-                lg: '50px 100px 0px 50px'
+                md: '70px 100px 0px 50px',
+                lg: '70px 100px 0px 50px'
             },
             alignItems: 'center',
             textAlign: {
@@ -78,7 +78,7 @@ const AboutUs = () => {
 
             }}
             >
-                <p>Learn More About Us</p>
+                <Typography>Learn More About Us</Typography>
                 <Typography
                 sx={{
                     fontSize: '30px',
@@ -86,12 +86,12 @@ const AboutUs = () => {
                     color: 'white'
                 }}
                 >
-                    The Journey Of The Relaxation
+                    Your Fitness, Your Way
                 </Typography>
                 <Typography
                 color="#afafaf"
                 >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Embark on a transformative fitness journey with PowerPro. Whether you're looking to build strength, improve flexibility, or simply enhance your overall well-being, we're here to guide and support you every step of the way. Download PowerPro today and make fitness a sustainable and enjoyable part of your daily life. Your health and happiness are just a click away!
                 </Typography>
             </Box>
 
@@ -115,7 +115,7 @@ const AboutUs = () => {
                 width="100%"
                 src={woman}
                 style={{
-                    borderRadius: '7px'
+                    borderRadius: '0px 55px 0px 55px',
                 }}
                 />
             </Box>

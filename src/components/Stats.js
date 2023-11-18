@@ -12,9 +12,10 @@ export default function Stats() {
       sx={{
         fontSize: {lg: '44px', xs: '30px'}
       }}
-      pt="50px"
+      pt="80px"
       textAlign="center"
       color= 'white'
+      
       
       >
         PUSH YOUR LIMITS FORWARD
@@ -144,7 +145,7 @@ export default function Stats() {
       <Box 
       className='bg'
       sx={{
-        marginTop: '100px',
+        marginTop: '80px',
         position: 'relative',
         backgroundColor: 'rgb(17, 17, 17)'
       }}

@@ -61,13 +61,27 @@ export default function Footer() {
             CONTACT US
             </Typography>
             <Typography
-            fontSize="35px"
+            sx={{
+              fontSize: {
+                xs: '25px',
+                sm: '25px',
+                md: '35px',
+                lg: '35px'
+              }
+            }}
             fontWeight={700}
             >
             powerpro@contact.com
             </Typography>
             <Typography
-            fontSize="35px"
+            sx={{
+              fontSize: {
+                xs: '25px',
+                sm: '25px',
+                md: '35px',
+                lg: '35px'
+              }
+            }}            
             fontWeight={700}
             >
             + 45 3421 7856
@@ -76,6 +90,7 @@ export default function Footer() {
             fontSize="14px"
             color="#afafaf"
             marginTop="25px"
+            marginBottom="10px"
             >
             FOLLOW US
             </Typography>
