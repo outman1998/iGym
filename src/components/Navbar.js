@@ -34,8 +34,8 @@ export default function Navbar() {
         alignItems="flex-end"
         marginLeft="50px"
         >
-            <Link style={{textDecoration: 'none', color: '#fff'}}>Home</Link>
-            <a href='#exercises' style={{textDecoration: 'none', color: '#fff'}}>Exercises</a>
+            <Link to="/" style={{textDecoration: 'none', color: '#fff'}}>Home</Link>
+            <Link to='/Exercises' style={{textDecoration: 'none', color: '#fff'}}>Exercises</Link>
         </Stack>
         </Box>
 

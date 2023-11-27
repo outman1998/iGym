@@ -160,16 +160,26 @@ export default function Stats() {
         className='abs'
         sx={{
           position: 'absolute',
-          top: '30%',
+          top: {
+            xs: '20%',
+            sm: '30%',
+            md: '30%',
+            lg: '30%'
+          },
           left: {xs: '4%', sm: '10%', md: '20%', lg: '20%'} 
         }}
         >
         <Typography
-        fontSize="45px"
         color="white"
         fontWeight={700}
         sx={{
-          width: {xs: '100%', sm: '80%', md: '80%', lg: '50%'} 
+          width: {xs: '70%', sm: '70%', md: '80%', lg: '50%'}, 
+          fontSize: {
+            xs: '25px',
+            sm: '35px',
+            md: '45px',
+            lg: '45px'
+          }
         }}
         >
         Achieve your training goals with the right plan, not with luck.

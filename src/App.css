@@ -218,25 +218,13 @@ div#panel1a-content {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 600px) {
-
-  .pic {
-    height: 200px;
-  }
-
-  .pic img {
-    height: 200px;
-  }
-
-}
-
 .pic {
-  height: 600px;
+  max-height: 600px;
 }
 
-.pic img {
-  height: 600px;
-}
+
+
+
 
 .knap {
   background-color: red;
@@ -275,3 +263,42 @@ div#panel1a-content {
     opacity: 1;
   }
 }
+
+.one {
+
+  .span {
+    background-color: #0000004a;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.two {
+  .span {
+    background-color: #0000004a;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.three {
+  .span {
+    background-color: #0000004a;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+
+  .spanen {
+    border: 2px solid red;
+    width: 35px;
+    margin: 10px 0px;
+  }
+
