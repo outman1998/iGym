@@ -2,6 +2,9 @@ import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
 import HeroBanner from '../components/HeroBanner'
 import { MdOutlineRunCircle } from "react-icons/md";
+import SendIcon from '@mui/icons-material/Send';
+import { CgGym } from "react-icons/cg";
+import { MdOutlineSportsGymnastics } from "react-icons/md";
 
 const Exercises = () => {
   return (
@@ -14,7 +17,7 @@ const Exercises = () => {
       
       <Box
       sx={{
-        padding: '100px 0px',
+        padding: '100px 20px',
       }}
       >
         <Typography
@@ -26,18 +29,20 @@ const Exercises = () => {
             textAlign: 'center'
         }}
         >
-            We provide the tools you need to build the body you want
+            We provide the programs you need to build the body you want
         </Typography>
         <Box 
         sx={{
             display: {xs: '', sm: '', md: 'flex', lg: 'flex'},
-            justifyContent: 'space-between',
+            justifyContent: 'center',
+            // flexWrap: 'wrap'
         }}
         >
             <Box 
             className='one'
             sx={{
-                margin: {xs: '0px auto 25px auto', sm: '0px auto 25px auto', md: '0px 5px 0px auto', lg: 'auto'},
+                cursor: 'pointer',
+                margin: {xs: '0px auto 25px auto', sm: '0px auto 25px auto', md: '0px 25px 25px 0', lg: '0 25px 25px 0px'},
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
                 borderRadius: '10px',
@@ -100,6 +105,8 @@ const Exercises = () => {
                         </Typography>
                     </Box>
                     <Button
+                    variant="contained"
+                    endIcon={<SendIcon />}
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
@@ -113,7 +120,7 @@ const Exercises = () => {
                         padding: '5px 30px'
                     }}
                     >
-                        Join now
+                        Go to program
                     </Button>
                 </Box>
             </Box>
@@ -121,7 +128,8 @@ const Exercises = () => {
             <Box 
             className='boxes two'
             sx={{
-                margin: {xs: '0px auto 25px auto', sm: '0px auto 25px auto', md: '0px 5px 0px auto', lg: 'auto'},
+                cursor: 'pointer',
+                margin: {xs: '0px auto 25px auto', sm: '0px auto 25px auto', md: '0px 25px 25px 0', lg: '0 25px 25px 0px'},
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
                 borderRadius: '10px',
@@ -169,7 +177,7 @@ const Exercises = () => {
                         marginBottom: '10px'
                     }}
                     >
-                        <MdOutlineRunCircle 
+                        <CgGym 
                         style={{fontSize: '20px'}}
                         />
                         <Typography 
@@ -184,6 +192,7 @@ const Exercises = () => {
                         </Typography>
                     </Box>
                     <Button
+                    endIcon={<SendIcon />}
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
@@ -197,7 +206,7 @@ const Exercises = () => {
                         padding: '5px 30px'
                     }}
                     >
-                        Join now
+                        Go to program
                     </Button>
                 </Box>
             </Box>
@@ -205,7 +214,8 @@ const Exercises = () => {
             <Box 
             className='boxes three'
             sx={{
-                margin: {xs: '0px auto 25px auto', sm: '0px auto 25px auto', md: 'auto', lg: 'auto'},
+                cursor: 'pointer',
+                margin: {xs: '0px auto 25px auto', sm: '0px auto 25px auto', md: '0', lg: '0'},
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
                 borderRadius: '10px',
@@ -253,7 +263,7 @@ const Exercises = () => {
                         marginBottom: '10px'
                     }}
                     >
-                        <MdOutlineRunCircle 
+                        <MdOutlineSportsGymnastics 
                         style={{fontSize: '20px'}}
                         />
                         <Typography 
@@ -268,6 +278,7 @@ const Exercises = () => {
                         </Typography>
                     </Box>
                     <Button
+                    endIcon={<SendIcon />}
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
@@ -281,7 +292,7 @@ const Exercises = () => {
                         padding: '5px 30px'
                     }}
                     >
-                        Join now
+                        Go to program
                     </Button>
                 </Box>
             </Box>
