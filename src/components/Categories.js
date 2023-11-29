@@ -20,7 +20,6 @@ const Categories = () => {
             fontSize: {xs: '35px', sm: '35px', md: '45px', lg: '45px' },
             fontWeight: 'bold',
             marginBottom: '25px',
-            textAlign: {xs: 'center', sm: 'center', md: 'left', lg:'left'},
             margin: 'auto auto 30px auto',
             maxWidth: '75rem',
         }}
@@ -47,7 +46,7 @@ const Categories = () => {
                 objectFit: 'cover',
                 position: 'relative',
                 backgroundImage: 'url(https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2021-12/211208-working-out-stock-mn-1310-55e1c7.jpg)',
-                width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                 height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
             }}
             >
@@ -114,7 +113,8 @@ const Categories = () => {
                         border: 'none',
                         marginBottom: '20px',
                         width: 'fit-content',
-                        padding: '5px 30px'
+                        padding: '5px 30px',
+                        ":hover": {backgroundColor: 'white'}
                     }}
                     >
                         Go to program
@@ -134,7 +134,7 @@ const Categories = () => {
                 objectFit: 'cover',
                 position: 'relative',
                 backgroundImage: 'url(https://gymate-iota.vercel.app/static/media/powerlifting.78726cf515db8f5e86b5.jpg)',
-                width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                 height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
             }}
             >
@@ -200,7 +200,8 @@ const Categories = () => {
                         border: 'none',
                         marginBottom: '20px',
                         width: 'fit-content',
-                        padding: '5px 30px'
+                        padding: '5px 30px',
+                        ":hover": {backgroundColor: 'white'}
                     }}
                     >
                         Go to program
@@ -220,7 +221,7 @@ const Categories = () => {
                 objectFit: 'cover',
                 position: 'relative',
                 backgroundImage: 'url(https://gymate-iota.vercel.app/static/media/workout.5719e59e3a50e909c445.jpg)',
-                width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                 height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
             }}
             >
@@ -286,7 +287,8 @@ const Categories = () => {
                         border: 'none',
                         marginBottom: '20px',
                         width: 'fit-content',
-                        padding: '5px 30px'
+                        padding: '5px 30px',
+                        ":hover": {backgroundColor: 'white'}
                     }}
                     >
                         Go to program
@@ -309,7 +311,6 @@ const Categories = () => {
             fontSize: {xs: '35px', sm: '35px', md: '45px', lg: '45px' },
             fontWeight: 'bold',
             marginBottom: '25px',
-            textAlign: {xs: 'center', sm: 'center', md: 'left', lg:'left'},
             margin: 'auto auto 30px auto',
             maxWidth: '75rem',
         }}
@@ -336,7 +337,7 @@ const Categories = () => {
                 objectFit: 'cover',
                 position: 'relative',
                 backgroundImage: 'url(https://www.muscleandfitness.com/wp-content/uploads/2019/09/Muscular-V-Taper-Back.jpg?quality=86&strip=all)',
-                width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                 height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
             }}
             >
@@ -403,7 +404,8 @@ const Categories = () => {
                         border: 'none',
                         marginBottom: '20px',
                         width: 'fit-content',
-                        padding: '5px 30px'
+                        padding: '5px 30px',
+                        ":hover": {backgroundColor: 'white'}
                     }}
                     >
                             See exercises
@@ -423,7 +425,7 @@ const Categories = () => {
                 objectFit: 'cover',
                 position: 'relative',
                 backgroundImage: 'url(https://wearefitnessfreak.com/wp-content/uploads/2020/11/Best-Chest-Exercises-at-the-Gym-1.jpeg)',
-                width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                 height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
             }}
             >
@@ -489,7 +491,8 @@ const Categories = () => {
                         border: 'none',
                         marginBottom: '20px',
                         width: 'fit-content',
-                        padding: '5px 30px'
+                        padding: '5px 30px',
+                        ":hover": {backgroundColor: 'white'}
                     }}
                     >
                             See exercises
@@ -509,7 +512,7 @@ const Categories = () => {
                 objectFit: 'cover',
                 position: 'relative',
                 backgroundImage: 'url(https://steelsupplements.com/cdn/shop/articles/shutterstock_609051533_1000x.jpg?v=1652132740)',
-                width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                 height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
             }}
             >
@@ -575,7 +578,8 @@ const Categories = () => {
                         border: 'none',
                         marginBottom: '20px',
                         width: 'fit-content',
-                        padding: '5px 30px'
+                        padding: '5px 30px',
+                        ":hover": {backgroundColor: 'white'}
                     }}
                     >
                             See exercises
@@ -613,7 +617,7 @@ const Categories = () => {
                     objectFit: 'cover',
                     position: 'relative',
                     backgroundImage: 'url(https://barbend.com/wp-content/uploads/2023/02/Barbend-Featured-Image-1600x900-A-person-performing-cable-biceps-curls.jpg)',
-                    width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                    width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                     height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
                 }}
                 >
@@ -680,7 +684,8 @@ const Categories = () => {
                             border: 'none',
                             marginBottom: '20px',
                             width: 'fit-content',
-                            padding: '5px 30px'
+                            padding: '5px 30px',
+                            ":hover": {backgroundColor: 'white'}
                         }}
                         >
                             See exercises
@@ -700,7 +705,7 @@ const Categories = () => {
                     objectFit: 'cover',
                     position: 'relative',
                     backgroundImage: 'url(https://www.muscleandfitness.com/wp-content/uploads/2019/12/arms-triceps-gym-cable-machine.jpg?w=1300&h=731&crop=1&quality=86&strip=all)',
-                    width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                    width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                     height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
                 }}
                 >
@@ -766,7 +771,8 @@ const Categories = () => {
                             border: 'none',
                             marginBottom: '20px',
                             width: 'fit-content',
-                            padding: '5px 30px'
+                            padding: '5px 30px',
+                            ":hover": {backgroundColor: 'white'}
                         }}
                         >
                             See exercises
@@ -786,7 +792,7 @@ const Categories = () => {
                     objectFit: 'cover',
                     position: 'relative',
                     backgroundImage: 'url(https://i0.wp.com/vshred.com/blog/wp-content/uploads/2018/06/man-gym-training-leg-press-define-leg-day-workout-ss-FEATURE-.jpg?fit=1000%2C560&ssl=1)',
-                    width: {xs: '90%', sm:'90%', md: '33.33%', lg: '33.33%'},
+                    width: {xs: '100%', sm:'100%', md: '33.33%', lg: '33.33%'},
                     height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
                 }}
                 >
@@ -852,7 +858,8 @@ const Categories = () => {
                             border: 'none',
                             marginBottom: '20px',
                             width: 'fit-content',
-                            padding: '5px 30px'
+                            padding: '5px 30px',
+                            ":hover": {backgroundColor: 'white'}
                         }}
                         >
                             See exercises

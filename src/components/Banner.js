@@ -10,11 +10,16 @@ const Banner = () => {
         alignItems: 'center',
         color: 'white',
         backgroundColor: 'black',
-        textAlign: 'center'
+        textAlign: 'center',
+        backgroundSize: 'cover', // Ensure the background image covers the entire box
+        backgroundPosition: 'right',
+        background: '#111111',
+        borderBottom: '1px solid rgb(243 243 243 / 3%)'
     };
 
 
   return (
+    <>
     <Box
     style={boxStyle}
     >
@@ -149,6 +154,8 @@ const Banner = () => {
         </Box>
 
     </Box>
+    </>
+
   )
 }
 
