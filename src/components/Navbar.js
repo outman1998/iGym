@@ -35,7 +35,7 @@ export default function Navbar() {
         marginLeft="50px"
         >
             <Link to="/" style={{textDecoration: 'none', color: '#fff'}}>Home</Link>
-            <Link to='/Exercises' style={{textDecoration: 'none', color: '#fff'}}>Exercises</Link>
+            <Link to='/Exercises' style={{textDecoration: 'none', color: '#fff'}}>Exclusive</Link>
         </Stack>
         </Box>
 

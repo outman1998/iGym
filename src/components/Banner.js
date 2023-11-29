@@ -21,14 +21,25 @@ const Banner = () => {
 
         <Box
         >
-            <Typography
+            <Box
             sx={{
-                fontSize: "22px",
-                fontWeight: 'light'
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
             }}
             >
-                Find Your Energy
-            </Typography>
+                <hr style={{width: '5%', height: '2px'}} />
+                <Typography
+                sx={{
+                    fontSize: "18px",
+                    fontWeight: 'light',
+                    padding: '0px 10px'
+                }}
+                >
+                    Exclusive
+                </Typography>
+                <hr style={{width: '5%', height: '2px'}} />
+            </Box>
             <Typography
             sx={{
                 fontSize:{

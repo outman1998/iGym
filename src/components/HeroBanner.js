@@ -29,12 +29,28 @@ export default function HeroBanner() {
                 padding: '20px', // Add padding if needed
               }}
       >
-      <Typography
-      color="#fff"
-      fontSize="22px"
-      >
-        A Free World Full Of Exercises
-      </Typography>
+        <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: '100%'
+        }}
+        >
+          <hr style={{width: '5%', height: '2px'}} />
+
+          <Typography
+            color="#fff"
+            fontSize="18px"
+            padding='0px 10px'
+
+          >
+            A Free World Full Of Exercises
+          </Typography>
+
+          <hr style={{width: '5%', height: '2px'}} />
+
+        </Box>
       <Typography
       color="#fff"
       sx={{
