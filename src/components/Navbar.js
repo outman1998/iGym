@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { Stack, Typography, Button, Box } from '@mui/material';
 import Logoe from '../assets/images/logoe.png';
+import Authmodal from './Auth/Authmodal';
 
 export default function Navbar() {
   return (
@@ -42,7 +43,7 @@ export default function Navbar() {
         </Box>
 
 
-        <button
+        {/* <button
         color='success'
         style={{
           backgroundColor:'transparent',
@@ -56,7 +57,9 @@ export default function Navbar() {
         }}
         >
           Login
-        </button>
+        </button> */}
+
+        <Authmodal />
         
     </Stack>
   )
