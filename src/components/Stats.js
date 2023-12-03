@@ -153,6 +153,7 @@ export default function Stats() {
         <img
         className='pic' 
         width="100%" 
+        alt='img'
         src={billed}
         />
         

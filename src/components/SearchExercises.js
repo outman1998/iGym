@@ -36,7 +36,7 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
     };
   
     fetchExercisesData();
-  }, []);
+  }, [bodyParts]);
   
 
 // func that handles the searchbar

@@ -1,7 +1,5 @@
 import React from 'react'
-import { Box, Stack, Typography, Button } from '@mui/material';
-import HeroBannerImage from '../assets/images/banner.png'
-import SendIcon from '@mui/icons-material/Send';
+import { Box, Typography } from '@mui/material';
 
 export default function HeroBanner() {
 

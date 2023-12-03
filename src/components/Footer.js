@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {AiFillInstagram, AiOutlineTwitter} from 'react-icons/ai'
 import {BsFacebook} from 'react-icons/bs'
-import {MdEmail, MdMail} from 'react-icons/md'
+import {MdMail} from 'react-icons/md'
 import logoe from '../assets/images/logoe.png'
 import { Box } from '@mui/material';
 
@@ -28,7 +28,7 @@ export default function Footer() {
           borderBottom: '2px solid rgba(254, 254, 254, 0.089)'
         }}
         >
-          <img src={logoe} className='logo' />
+          <img alt='logo' src={logoe} className='logo' />
 
           <Typography
           sx={{

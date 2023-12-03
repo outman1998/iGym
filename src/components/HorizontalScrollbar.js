@@ -1,5 +1,5 @@
-import React, {useContext} from 'react';
-import { Box, Typography } from '@mui/material';
+import React from 'react';
+import { Box } from '@mui/material';
 import BodyPart from './BodyPart';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';

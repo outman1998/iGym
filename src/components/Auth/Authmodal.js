@@ -5,6 +5,13 @@ import Modal from '@mui/material/Modal';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
+import Login from '../Auth/Login';
+import SignUp from '../Auth/SignUp';
+import GoogleButton from 'react-google-button';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { auth } from '../../firebase';
+import { useCtx } from '../../context/Context';
+
 
 const style = {
     position: 'absolute',
@@ -14,14 +21,14 @@ const style = {
     width: 400,
     bgcolor: 'background.paper',
     border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
+    boxShadow: 24
 };
 
 
 function CustomTabPanel(props) {
+
     const { children, value, index, ...other } = props;
-  
+
     return (
       <div
         role="tabpanel"
@@ -42,6 +49,8 @@ function CustomTabPanel(props) {
 
 const Authmodal = () => {
 
+    const {setAlert} = useCtx();
+
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -52,7 +61,26 @@ const Authmodal = () => {
       setValue(newValue);
     };
 
-    console.log(value);
+    const googleProvider =  new GoogleAuthProvider();
+
+    const signInWithGoogle = () => {
+      signInWithPopup(auth, googleProvider).then((result) => {
+        setAlert({
+          open: true,
+          type: 'success',
+          message: `Sign Up Successful. Welcome ${result.user.email}`
+        });
+        handleClose();
+
+      }).catch((error) => {
+        setAlert({
+          open: true,
+          message: error.message,
+          type: 'error'
+        });
+        return;
+      })
+    }
   
   return (
     <>
@@ -83,13 +111,22 @@ const Authmodal = () => {
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
-                    Item One
+                    <Login handleClose={handleClose} />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                    Item Two
+                    <SignUp handleClose={handleClose} />
                 </CustomTabPanel>
             </Box>
+
+            <Box sx={{textAlign: 'center', padding: '0px 24px'}}>
+              <span>OR</span>
+              <GoogleButton 
+              style={{width: '100%', outline: 'none', margin: '20px 0px'}}
+              onClick={signInWithGoogle}
+              />
+            </Box>
         </Box>
+
       </Modal>
     </>
   )

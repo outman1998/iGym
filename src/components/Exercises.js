@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import { Box, Pagination, Typography, Stack } from '@mui/material';
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 import ExerciseCard from './ExerciseCard';
-import { Search } from '@mui/icons-material';
 
 export default function Exercises({exercises, setExercises, bodyPart}) {
 
@@ -55,7 +54,7 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
     };
   
     fetchExercisesData();
-  }, [bodyPart]);
+  }, [bodyPart, setExercises]);
   
   return (
     <Box 

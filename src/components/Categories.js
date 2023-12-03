@@ -106,7 +106,6 @@ const Categories = () => {
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
-                        padding: '5px 15px',
                         fontWeight: 'bold',
                         borderRadius: '3px',
                         zIndex: 1000,
@@ -193,7 +192,6 @@ const Categories = () => {
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
-                        padding: '5px 15px',
                         fontWeight: 'bold',
                         borderRadius: '3px',
                         zIndex: 1000,
@@ -280,7 +278,6 @@ const Categories = () => {
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
-                        padding: '5px 15px',
                         fontWeight: 'bold',
                         borderRadius: '3px',
                         zIndex: 1000,
@@ -397,7 +394,6 @@ const Categories = () => {
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
-                        padding: '5px 15px',
                         fontWeight: 'bold',
                         borderRadius: '3px',
                         zIndex: 1000,
@@ -484,7 +480,6 @@ const Categories = () => {
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
-                        padding: '5px 15px',
                         fontWeight: 'bold',
                         borderRadius: '3px',
                         zIndex: 1000,
@@ -571,7 +566,6 @@ const Categories = () => {
                     sx={{
                         backgroundColor: 'white',
                         color: 'black',
-                        padding: '5px 15px',
                         fontWeight: 'bold',
                         borderRadius: '3px',
                         zIndex: 1000,
@@ -677,7 +671,6 @@ const Categories = () => {
                         sx={{
                             backgroundColor: 'white',
                             color: 'black',
-                            padding: '5px 15px',
                             fontWeight: 'bold',
                             borderRadius: '3px',
                             zIndex: 1000,
@@ -764,7 +757,6 @@ const Categories = () => {
                         sx={{
                             backgroundColor: 'white',
                             color: 'black',
-                            padding: '5px 15px',
                             fontWeight: 'bold',
                             borderRadius: '3px',
                             zIndex: 1000,
@@ -851,7 +843,6 @@ const Categories = () => {
                         sx={{
                             backgroundColor: 'white',
                             color: 'black',
-                            padding: '5px 15px',
                             fontWeight: 'bold',
                             borderRadius: '3px',
                             zIndex: 1000,

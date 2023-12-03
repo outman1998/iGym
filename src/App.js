@@ -8,6 +8,7 @@ import ExerciseDetail from '../src/pages/ExerciseDetail';
 import Footer from './components/Footer';
 import Exercises from '../src/pages/Exercises'
 import Search from '../src/pages/Search';
+import Alert from './components/Alert';
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
         <Route path="/exercise/:id" element={<ExerciseDetail />} />
         <Route path="/Exercises" element={<Exercises />} />
         <Route path="/Search" element={<Search />} />
-
       </Routes>
+      <Alert />
       <Footer />
     </Box>
   );

@@ -1,10 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { Stack, Typography, Button, Box } from '@mui/material';
+import { Stack, Box } from '@mui/material';
 import Logoe from '../assets/images/logoe.png';
 import Authmodal from './Auth/Authmodal';
+import { useCtx } from '../context/Context';
+import { signOut } from 'firebase/auth';
+import { auth } from '../firebase';
 
 export default function Navbar() {
+
+  const logOut = () => {
+    signOut(auth, )
+    console.log("logged out");
+    setAlert({
+      open: true,
+      type: 'success',
+      message: 'Logout successful!'
+    })
+
+
+  }
+
+  const {user, setAlert} = useCtx();
   return (
     <Stack
     direction='row'
@@ -26,7 +43,7 @@ export default function Navbar() {
         alignItems: 'center'
       }}
       >
-      <img width="50px" src={Logoe} />
+      <img alt='img' width="50px" src={Logoe} />
 
         <Stack
         direction="row"
@@ -35,15 +52,16 @@ export default function Navbar() {
         alignItems="flex-end"
         marginLeft="50px"
         >
-            <Link to="/" style={{textDecoration: 'none', color: '#fff'}}>Home</Link>
-            <Link to='/Exercises' style={{textDecoration: 'none', color: '#fff'}}>Exclusive</Link>
-            <Link to='/Search' style={{textDecoration: 'none', color: '#fff'}}>Search</Link>
+            {user && <Link to="/" style={{textDecoration: 'none', color: '#fff'}}>Home</Link>}
+            {user && <Link to='/Exercises' style={{textDecoration: 'none', color: '#fff'}}>Exclusive</Link>}
+            {user && <Link to='/Search' style={{textDecoration: 'none', color: '#fff'}}>Search</Link>}
 
         </Stack>
         </Box>
 
 
-        {/* <button
+        { user ?
+        <button
         color='success'
         style={{
           backgroundColor:'transparent',
@@ -55,11 +73,10 @@ export default function Navbar() {
           fontSize: '18px',
           cursor: 'pointer'
         }}
+        onClick={logOut}
         >
-          Login
-        </button> */}
-
-        <Authmodal />
+          Log out
+        </button> : <Authmodal /> }
         
     </Stack>
   )

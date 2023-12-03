@@ -114,6 +114,7 @@ const AboutUs = () => {
                 <img 
                 width="100%"
                 src={woman}
+                alt='woman'
                 style={{
                     borderRadius: '0px 55px 0px 55px',
                 }}
