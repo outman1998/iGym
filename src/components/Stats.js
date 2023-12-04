@@ -2,8 +2,12 @@ import React from 'react'
 import { Box, Button, Typography } from '@mui/material';
 import billed from '../assets/images/fitness.png';
 import SendIcon from '@mui/icons-material/Send';
+import { useCtx } from '../context/Context';
 
 export default function Stats() {
+
+  const {handleOpen} = useCtx();
+
   return (
     <div style={{backgroundColor: '#111111'}}>
 
@@ -197,6 +201,7 @@ export default function Stats() {
         }}
         variant="contained"
         endIcon={<SendIcon />}
+        onClick={handleOpen}
         >
           Become member
         </Button>

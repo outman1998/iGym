@@ -71,7 +71,7 @@ export default function Footer() {
             }}
             fontWeight={700}
             >
-            powerpro@contact.com
+            iGym@contact.com
             </Typography>
             <Typography
             sx={{
@@ -182,7 +182,7 @@ export default function Footer() {
           fontSize: '13px'
         }}
         >
-          Copyright © 2023 Powerpro.com. All rights reserved
+          Copyright © 2023 iGym.com. All rights reserved
         </Typography>
 
         <Box

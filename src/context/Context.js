@@ -12,6 +12,10 @@ export default function Context({children}) {
       message: "",
       type: "success"
     });
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => setOpen(true);
+
 
     useEffect(() => {
       onAuthStateChanged(auth, (user) => {
@@ -30,7 +34,10 @@ export default function Context({children}) {
       alert, 
       setAlert, 
       user,
-      setUser
+      setUser,
+      open,
+      setOpen,
+      handleOpen
     }}>
       {children}
     </ctx.Provider>

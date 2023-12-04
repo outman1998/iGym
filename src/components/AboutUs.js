@@ -37,7 +37,7 @@ const AboutUs = () => {
                 }        
             }}
             >
-            At PowerPro, we understand that the path to a healthier lifestyle is unique for each individual. Our story began with a simple yet powerful idea: to create a fitness platform that breaks down barriers and makes exercise accessible to everyone, regardless of age, fitness level, or location.
+            At iGym, we understand that the path to a healthier lifestyle is unique for each individual. Our story began with a simple yet powerful idea: to create a fitness platform that breaks down barriers and makes exercise accessible to everyone, regardless of age, fitness level, or location.
             </Typography>
         </div>
 
@@ -91,7 +91,7 @@ const AboutUs = () => {
                 <Typography
                 color="#afafaf"
                 >
-            Embark on a transformative fitness journey with PowerPro. Whether you're looking to build strength, improve flexibility, or simply enhance your overall well-being, we're here to guide and support you every step of the way. Download PowerPro today and make fitness a sustainable and enjoyable part of your daily life. Your health and happiness are just a click away!
+            Embark on a transformative fitness journey with iGym. Whether you're looking to build strength, improve flexibility, or simply enhance your overall well-being, we're here to guide and support you every step of the way. Download iGym today and make fitness a sustainable and enjoyable part of your daily life. Your health and happiness are just a click away!
                 </Typography>
             </Box>
 

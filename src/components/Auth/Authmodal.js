@@ -21,7 +21,8 @@ const style = {
     width: 400,
     bgcolor: 'background.paper',
     border: '2px solid #000',
-    boxShadow: 24
+    boxShadow: 24,
+    borderRadius: '7px'
 };
 
 
@@ -49,10 +50,9 @@ function CustomTabPanel(props) {
 
 const Authmodal = () => {
 
-    const {setAlert} = useCtx();
+    const {setAlert, open, setOpen, handleOpen} = useCtx();
 
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
+    // const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     const [value, setValue] = React.useState(0);
@@ -119,7 +119,7 @@ const Authmodal = () => {
             </Box>
 
             <Box sx={{textAlign: 'center', padding: '0px 24px'}}>
-              <span>OR</span>
+              <span style={{fontWeight: 'bold'}}>OR</span>
               <GoogleButton 
               style={{width: '100%', outline: 'none', margin: '20px 0px'}}
               onClick={signInWithGoogle}
