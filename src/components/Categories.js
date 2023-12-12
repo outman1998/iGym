@@ -3,9 +3,11 @@ import { MdOutlineRunCircle } from "react-icons/md";
 import SendIcon from '@mui/icons-material/Send';
 import { CgGym } from "react-icons/cg";
 import { MdOutlineSportsGymnastics } from "react-icons/md";
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Categories = () => {
+
   return (
     <Box backgroundColor='#111111'>
         <Box
@@ -404,7 +406,11 @@ const Categories = () => {
                         ":hover": {backgroundColor: 'white'}
                     }}
                     >
+                        <Link 
+                        to={`/bodyarea/back`}
+                        >
                             See exercises
+                        </Link>
                     </Button>
                 </Box>
             </Box>

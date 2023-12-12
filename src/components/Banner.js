@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 
-const Banner = () => {
+const Banner = (props) => {
 
     const boxStyle = {
         height: '100vh', // Set the height to 100% of the viewport height
@@ -41,7 +41,7 @@ const Banner = () => {
                     padding: '0px 10px'
                 }}
                 >
-                    Exclusive
+                    {props.paragraph}
                 </Typography>
                 <hr style={{width: '5%', height: '2px'}} />
             </Box>
@@ -57,7 +57,7 @@ const Banner = () => {
                 margin: ' 0px 10px'
             }}
             >
-                MAKE YOUR BODY <br/> 
+                {props.title} <br/> 
                 <span
                 style={{
                     WebkitTextFillColor: 'transparent',
@@ -66,7 +66,7 @@ const Banner = () => {
                     color: 'blue'
                 }}
                 >
-                    FIT & PERFECT
+                    {props.titleTwo}
                 </span>
             </Typography>
 

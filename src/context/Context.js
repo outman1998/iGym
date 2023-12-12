@@ -6,6 +6,8 @@ const ctx = createContext();
 
 export default function Context({children}) {
 
+    const [exercises, setExercises] = useState([]);
+    const [bodyPart, setBodyPart] = useState('all');  
     const [user, setUser] = useState(null);
     const [alert, setAlert] = useState({
       open: false,
@@ -37,7 +39,11 @@ export default function Context({children}) {
       setUser,
       open,
       setOpen,
-      handleOpen
+      handleOpen,
+      exercises,
+      setExercises,
+      bodyPart,
+      setBodyPart
     }}>
       {children}
     </ctx.Provider>

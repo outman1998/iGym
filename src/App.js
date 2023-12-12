@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Exercises from '../src/pages/Exercises'
 import Search from '../src/pages/Search';
 import Alert from './components/Alert';
+import Bodyarea from './pages/Bodyarea';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/exercise/:id" element={<ExerciseDetail />} />
         <Route path="/Exercises" element={<Exercises />} />
         <Route path="/Search" element={<Search />} />
+        <Route path="/bodyarea/:id" element={<Bodyarea />} />
       </Routes>
       <Alert />
       <Footer />

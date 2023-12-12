@@ -310,3 +310,8 @@ div#panel1a-content {
     height: 100%;
     position: absolute;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }

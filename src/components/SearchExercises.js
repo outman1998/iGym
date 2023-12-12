@@ -11,16 +11,16 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
   const [bodyParts, setBodyParts] = useState([])
 
 // function that fetches all possible bodyparts in api
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   const fetchExercisesData = async () => {
-  //     const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
+    const fetchExercisesData = async () => {
+      const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
       
-  //     setBodyParts(['all', ...bodyPartsData]);
-  //     console.log(bodyParts);
-  //   }
-  //   fetchExercisesData();
-  // }, [])
+      setBodyParts(['all', ...bodyPartsData]);
+      console.log(bodyParts);
+    }
+    fetchExercisesData();
+  }, [])
 
   useEffect(() => {
     const fetchExercisesData = async () => {
@@ -28,7 +28,6 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
         const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
   
         setBodyParts(['all', ...bodyPartsData]);
-        console.log(bodyParts);
       } catch (error) {
         // Handle the error when fetching body parts data
         console.error('Error fetching body parts data:', error);

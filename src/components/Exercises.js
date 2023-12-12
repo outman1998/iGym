@@ -11,8 +11,14 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
   // you have to map over this currentexercises and not all exercises as we do it right now below in the code
-  // const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
-
+  let currentExercises = '';
+  if (Array.isArray(exercises)) {
+    currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
+    // rest of your code
+  } else {
+    console.error('exercises is not an array');
+  }
+  
 
 
   const paginate = (e, value) => {
@@ -93,7 +99,7 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
       mt="100px"
       alignItems="center"
       >
-        {exercises.length > exercisesPerPage && (
+        {currentExercises.length > exercisesPerPage && (
           <Pagination 
           color='standard'
           shape='rounded'

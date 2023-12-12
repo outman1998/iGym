@@ -5,7 +5,7 @@ import Banner from '../components/Banner';
 const Exercises = () => {
   return (
     <Box>
-      <Banner />
+      <Banner title="MAKE YOUR BODY" titleTwo="FIT PERFECT" paragraph="Exclusive" />
       <Categories />
     </Box>
   )
