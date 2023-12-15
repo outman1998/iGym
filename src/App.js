@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import Home from '../src/pages/Home';
 import ExerciseDetail from '../src/pages/ExerciseDetail';
 import Footer from './components/Footer';
-import Exercises from '../src/pages/Exercises'
 import Search from '../src/pages/Search';
 import Alert from './components/Alert';
 import Bodyarea from './pages/Bodyarea';
@@ -18,7 +17,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/exercise/:id" element={<ExerciseDetail />} />
-        <Route path="/Exercises" element={<Exercises />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/bodyarea/:id" element={<Bodyarea />} />
       </Routes>

@@ -1,8 +1,11 @@
 import React from 'react';
-import { Box } from '@mui/material';
 import BodyPart from './BodyPart';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { Box, Button, Typography } from '@mui/material';
+import { MdOutlineRunCircle } from "react-icons/md";
+import SendIcon from '@mui/icons-material/Send';
+import { MdOutlineSportsGymnastics } from "react-icons/md";
 
 const imageMapping = {
     all: 'https://www.dmarge.com/wp-content/uploads/2020/01/hotelworkout.jpg',
@@ -34,6 +37,7 @@ export default function HorizontalScrollbar({ data, setBodyPart }) {
             items: 3
         }
     };
+
     
   return (
     <AliceCarousel

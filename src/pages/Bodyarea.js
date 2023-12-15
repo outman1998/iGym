@@ -4,12 +4,34 @@ import { useParams } from 'react-router-dom';
 import { Typography, Box, Stack, Button  } from '@mui/material';
 import Dummydata from '../../src/Data';
 import { Link } from 'react-router-dom';
+import { useCtx } from '../context/Context';
+import { exerciseOptions, fetchData } from '../utils/fetchData';
 
 const Bodyarea = () => {
 
     const { id } = useParams();
+    const {exercises, setExercises} = useCtx();
+
 
     useEffect(() => {
+      const fetchExercisesData = async () => {
+        try {
+          let exerciseData = [];
+    
+          if (id === 'all') {
+            exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises`, exerciseOptions);
+          } else {
+            exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${id}`, exerciseOptions);
+          }
+    
+          setExercises(exerciseData);
+        } catch (error) {
+          // Handle the error, you can log it or show an error message to the user
+          console.error('Error fetching exercise data:', error);
+        }
+      };
+    
+      fetchExercisesData();
 
     }, [])
 
@@ -49,7 +71,7 @@ const Bodyarea = () => {
         flexWrap: 'wrap'
       }}
       >
-        {Dummydata.map((exercise) => (
+        {exercises.map((exercise) => (
           <Box 
           className='boksen'
           sx={{

@@ -11,12 +11,12 @@ const Search = () => {
   return (
     <>
     <Banner 
-    title="EXERCISES THAT TARGETS" 
-    titleTwo="THE BACK" 
-    paragraph="Back exercises"
+   title="MAKE YOUR BODY" 
+   titleTwo="FIT PERFECT" 
+   paragraph="Exclusive"
     />
 
-    {/* <SearchExercises 
+    <SearchExercises 
         exercises={exercises}
         setExercises={setExercises} 
         bodyPart={bodyPart} 
@@ -27,7 +27,7 @@ const Search = () => {
         exercises={exercises} 
         setExercises={setExercises} 
         bodyPart={bodyPart} 
-      /> */}
+      />
 
     </>
   )

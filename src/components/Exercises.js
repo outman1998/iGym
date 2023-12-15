@@ -67,7 +67,7 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
     id="exercises"
     sx={{
       pt: {lg: '110px'},
-      backgroundColor: 'white'
+      backgroundColor: '#111111'
     }}
     pt="50px"
     p="20px"
@@ -75,6 +75,7 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
       <Typography
       variant='h3'
       mb="46px"
+      color="white"
       fontWeight={700}
       sx={{
         fontSize: {lg: '44px', xs: '30px'}
@@ -101,7 +102,7 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
       >
         {currentExercises.length > exercisesPerPage && (
           <Pagination 
-          color='standard'
+          color='#111111'
           shape='rounded'
           defaultPage={1}
           count={Math.ceil(exercises.length / exercisesPerPage)}

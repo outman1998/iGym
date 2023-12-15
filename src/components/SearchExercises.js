@@ -63,7 +63,7 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
     justifyContent="center" 
     p="20px"
     width="100"
-    backgroundColor= 'white'
+    backgroundColor= '#111111'
     >
       <Typography
       fontWeight={700}
@@ -73,6 +73,7 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
       pb="50px"
       pt="50px"
       textAlign="center"
+      color= 'white'
       >
         Find the Perfect Workout <br /> For Your Target Muscle Group
       </Typography>
@@ -90,7 +91,7 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
           },
           width: {lg: '800px', xs: '350px'},
           backgroundColor: '#fff', 
-          borderRadius: '40px'
+          borderRadius: '5px'
         }}
         height="76px"
         value={search}

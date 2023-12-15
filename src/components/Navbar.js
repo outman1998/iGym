@@ -53,8 +53,7 @@ export default function Navbar() {
         marginLeft="50px"
         >
             {user && <Link to="/" style={{textDecoration: 'none', color: '#fff'}}>Home</Link>}
-            {user && <Link to='/Exercises' style={{textDecoration: 'none', color: '#fff'}}>Exclusive</Link>}
-            {user && <Link to='/Search' style={{textDecoration: 'none', color: '#fff'}}>Search</Link>}
+            {user && <Link to='/Search' style={{textDecoration: 'none', color: '#fff'}}>Exclusive</Link>}
 
         </Stack>
         </Box>
