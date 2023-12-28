@@ -85,7 +85,7 @@ const Authmodal = () => {
     <>
       <button 
       onClick={handleOpen}
-      className='bg-red-400 hover:bg-red-500 transition-all duration-300 ease-in-out text-white py-2 px-10 rounded-full text-bold cursor-pointer'
+      className='bg-red-400 hover:bg-red-500 transition-all duration-300 ease-in-out text-white py-2 px-10 rounded text-bold cursor-pointer'
       >
         Login
       </button>

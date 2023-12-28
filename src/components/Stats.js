@@ -44,7 +44,7 @@ export default function Stats() {
           sx={{
             WebkitTextFillColor: 'transparent',
             WebkitTextStrokeWidth: '4px',
-            WebkitTextStrokeColor: '#FF2625'
+            WebkitTextStrokeColor: 'black'
           }}
           >
             3
@@ -68,7 +68,7 @@ export default function Stats() {
             sx={{
               WebkitTextFillColor: 'transparent',
               WebkitTextStrokeWidth: '4px',
-              WebkitTextStrokeColor: '#FF2625'
+              WebkitTextStrokeColor: 'black'
             }}
           >
             5
@@ -91,7 +91,7 @@ export default function Stats() {
           sx={{
             WebkitTextFillColor: 'transparent',
             WebkitTextStrokeWidth: '4px',
-            WebkitTextStrokeColor: '#FF2625'
+            WebkitTextStrokeColor: 'black'
           }}
           >
             43K
@@ -112,7 +112,7 @@ export default function Stats() {
           sx={{
             WebkitTextFillColor: 'transparent',
             WebkitTextStrokeWidth: '4px',
-            WebkitTextStrokeColor: '#FF2625'
+            WebkitTextStrokeColor: 'black'
           }}
           >
             88

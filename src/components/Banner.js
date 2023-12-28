@@ -33,15 +33,11 @@ const Banner = (props) => {
             }}
             >
                 <hr style={{width: '5%', height: '2px', border: '1px solid black'}} />
-                <Typography
-                sx={{
-                    fontSize: "18px",
-                    fontWeight: 'light',
-                    padding: '0px 10px'
-                }}
+                <p
+                className='text-lg px-3'
                 >
                     {props.paragraph}
-                </Typography>
+                </p>
                 <hr style={{width: '5%', height: '2px', border: '1px solid black'}} />
             </Box>
             <Typography
@@ -61,8 +57,7 @@ const Banner = (props) => {
                 style={{
                     WebkitTextFillColor: 'transparent',
                     WebkitTextStrokeWidth: '2px',
-                    WebkitTextStrokeColor: '#c63d2f',
-                    color: 'blue'
+                    WebkitTextStrokeColor: 'black',
                 }}
                 >
                     {props.titleTwo}

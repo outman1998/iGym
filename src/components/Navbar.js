@@ -58,7 +58,7 @@ export default function Navbar() {
     <button 
     onClick={logOut} 
     href="#exercises" 
-    className='text-black border-2 border-[#FF2625] cursor-pointer px-10 py-2 rounded-lg'
+    className='text-black border-2 border-[#FF2625] cursor-pointer px-10 py-2 rounded'
     >
       Log out
     </button> : <Authmodal />}
