@@ -75,7 +75,7 @@ export default function SearchExercises({setExercises, bodyPart, setBodyPart}) {
       pt="50px"
       textAlign="center"
       >
-        Find the Perfect Workout <br /> For Your Target Muscle Group
+        Find the Perfect Workout For Your Target Muscle Group
       </Typography>
 
       <Box

@@ -21,7 +21,7 @@ const BodyPart = ({item, setBodyPart, BodyPart, imageSrc}) => {
             objectFit: 'cover',
             position: 'relative',
             backgroundImage: `url(${imageSrc})`,
-            width: {xs: '100%', sm:'100%', md: '97%', lg: '97%'},
+            width: {xs: '100%', sm:'97%', md: '97%', lg: '97%'},
             height: {xs: '350px', sm: '350px', md: '450px', lg: '450px'},
         }}
         onClick={() => { 
