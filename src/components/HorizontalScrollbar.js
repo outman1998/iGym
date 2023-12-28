@@ -31,23 +31,26 @@ export default function HorizontalScrollbar({ data, setBodyPart }) {
 
     const responsive = {
         0: {
-            items: 2,
+            items: 1,
         },
         512: {
-            items: 3
-        }
+            items: 2
+        },
+        800: {
+          items: 3
+      }
     };
 
     
   return (
     <AliceCarousel
     mouseTracking 
-    infinite
-    autoPlayInterval={1500}
-    animationDuration={1500}
+    // infinite
+    // autoPlayInterval={1500}
+    // animationDuration={1500}
     disableDotsControls
     responsive={responsive}
-    autoPlay
+    // autoPlay
     >
       {data.map((item) => (
         <Box

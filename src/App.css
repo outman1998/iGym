@@ -1,6 +1,9 @@
-body {
-  font-family: 'Josefin Sans';
-  background-color: #FFFAFB;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.containerr {
+  padding: 0px 50px;
 }
 
 * {
@@ -69,14 +72,16 @@ body {
   flex-direction: column;
   transform: scale(1, 1);
   transition: 0.3s all ease-in-out;
-  background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 10px;
-  padding: 7px;
+  background-color: #efefef;
+  border-radius: 20px;
+  border: 10px solid #efefef;
+
 }
 
 .exercise-card img {
   height: 250px;
   width: 100%;
+  max-width: 100%;
   /* border-top-left-radius: 50px;
   border-top-right-radius: 50px; */
   border-radius: 20px;
@@ -186,16 +191,16 @@ body {
 }
 
 #panel1a-header {
-  background-color: #232323f8;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .iconen {
-  color: white;
+  color: black;
 }
 
 .color {
-  background-color: #232323;
+  background-color: white;
 }
 
 div#panel1a-content {
@@ -266,6 +271,14 @@ div#panel1a-content {
 
 .one {
 
+    cursor: 'pointer'
+  backgroundRepeat: 'no-repeat'
+  backgroundSize: 'cover'
+  borderRadius: '10px'
+  backgroundPosition: '50%'
+  objectFit: 'cover'
+  position: 'relative'
+
   .span {
     background-color: #0000008a;
     border-radius: 10px;
@@ -315,3 +328,15 @@ div#panel1a-content {
     text-decoration: none;
     color: black;
   }
+
+
+  div#panel1a-header {
+    border-radius: 20px !important;
+}
+
+
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1elwnq4-MuiPaper-root-MuiAccordion-root:first {
+  border-radius: 0px 0px 0px 0px !important;
+  background: blue !important;
+}

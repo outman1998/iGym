@@ -6,6 +6,7 @@ import Authmodal from './Auth/Authmodal';
 import { useCtx } from '../context/Context';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
+import Logo from '../assets/images/logoe.png';
 
 export default function Navbar() {
 
@@ -23,60 +24,46 @@ export default function Navbar() {
 
   const {user, setAlert} = useCtx();
   return (
-    <Stack
-    direction='row'
-    justifyContent='space-around'
-    sx={{
-    gap: {sm: '122px', xs: '40px'}, 
-    mt: {sm: '32px', xs: '20px'},
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    px:'20px',
-    position: "absolute",
-    width: '100%'
-    }} 
+    <div className='containerr absolute w-full'>
+
+    <div className='flex justify-between items-center pt-10 w-full'>
+
+    <Link to="/">
+      <img 
+      src={Logo} 
+      alt="logo" 
+      className='w-[48px] h-[48px] rounded-lg p-2 bg-black'
+      />
+    </Link>
+
+    <div
+    className='flex'
     >
-
-      <Box
-      sx={{
-        display: 'flex',
-        alignItems: 'center'
-      }}
+      <Link 
+      className='mr-5 text-xl text-[#3A1212]' 
+      to="/"
       >
-      <img alt='img' width="50px" src={Logoe} />
+        Home
+      </Link>
+      <Link 
+      to="/Search" 
+      className='text-xl text-[#3A1212]'
+      >
+        Exslusive
+      </Link>
+    </div>
+    { user ? 
+    <button 
+    onClick={logOut} 
+    href="#exercises" 
+    className='text-black border-2 border-[#FF2625] cursor-pointer px-10 py-2 rounded-lg'
+    >
+      Log out
+    </button> : <Authmodal />}
 
-        <Stack
-        direction="row"
-        gap="40px"
-        fontSize="24px"
-        alignItems="flex-end"
-        marginLeft="50px"
-        >
-            {user && <Link to="/" style={{textDecoration: 'none', color: '#fff'}}>Home</Link>}
-            {user && <Link to='/Search' style={{textDecoration: 'none', color: '#fff'}}>Exclusive</Link>}
+    </div>
 
-        </Stack>
-        </Box>
+    </div>
 
-
-        { user ?
-        <button
-        color='success'
-        style={{
-          backgroundColor:'transparent',
-          color: 'white',
-          padding: '10px 35px',
-          borderRadius: '30px',
-          fontWeight: 'bold',
-          border: '1px solid white',
-          fontSize: '18px',
-          cursor: 'pointer'
-        }}
-        onClick={logOut}
-        >
-          Log out
-        </button> : <Authmodal /> }
-        
-    </Stack>
   )
 }

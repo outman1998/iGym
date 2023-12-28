@@ -8,13 +8,12 @@ const BodyPart = ({item, setBodyPart, BodyPart, imageSrc}) => {
   return (
 
       <Box 
-        className='one'
+        className='one relative'
           key={item.id || item}
           itemID={item.id || item}
           title={item.id || item}
         sx={{
             cursor: 'pointer',
-            margin: {xs: '0px auto 25px auto', sm: '0px auto 25px auto', md: '0px 25px 25px 0', lg: '0 25px 25px 0px'},
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             borderRadius: '10px',

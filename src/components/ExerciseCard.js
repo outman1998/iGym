@@ -4,51 +4,36 @@ import { Stack, Button, Typography } from '@mui/material';
 
 const ExerciseCard = ({exercise}) => {
   return (
-    <Link className='exercise-card' to={`/exercises/${exercise.id}`}>
+    <Link className='exercise-card w-1/3 m-auto mb-10' to={`/exercises/${exercise.id}`}>
         <img 
         src={exercise.gifUrl} 
         alt={exercise.name} 
         loading='lazy'
-        width="300px"
+        width="auto"
         />
 
-        <Stack direction="row">
-          <Button
-          sx={{
-            mt: '10px',
-            mr: '10px',
-            color: '#fff',
-            background: '#ffa9a9',
-            fontSize: '14px',
-            borderRadius: '20px',
-            textTransform: 'capitalize'
-          }}
+        <div className='flex justify-start items-center mt-3'>
+          <button
+          className='mr-2 bg-[#ffa9a9] text-[#14px] rounded-lg py-1 px-5'
           > 
             {exercise.bodyPart}
-          </Button>
+          </button>
 
-          <Button
-          sx={{
-            mt: '10px',
-            color: '#fff',
-            background: '#fcc757',
-            fontSize: '14px',
-            borderRadius: '20px',
-            textTransform: 'capitalize'
-          }}
+          <button
+            className='mr-2 bg-[#fcc757] text-[#14px] rounded-lg py-1 px-5'
           > 
             {exercise.target}
-          </Button>
-        </Stack>
-        <Typography
-        color="#000"
-        fontWeight="light"
-        mt="10px"
-        textTransform="capitalize"
-        fontSize="17px"
+          </button>
+        </div>
+
+        <p
+        className='text-black mt-5 text-[17px]'
         >
           {exercise.name}
-        </Typography>
+        </p>
+        <button>
+          See details
+        </button>
     </Link>
   )
 }

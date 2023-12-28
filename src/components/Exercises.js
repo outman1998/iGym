@@ -67,7 +67,8 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
     id="exercises"
     sx={{
       pt: {lg: '110px'},
-      backgroundColor: '#111111'
+      backgroundColor: 'white',
+      color: 'black'
     }}
     pt="50px"
     p="20px"
@@ -75,27 +76,22 @@ export default function Exercises({exercises, setExercises, bodyPart}) {
       <Typography
       variant='h3'
       mb="46px"
-      color="white"
       fontWeight={700}
       sx={{
         fontSize: {lg: '44px', xs: '30px'}
       }}
       >
-        Showing Results
+        Results
       </Typography>
 
-      <Stack
-      direction="row"
-      sx={{
-        gap: {lg: '110px', xs: '50px'}
-      }}
-      flexWrap="wrap"
-      justifyContent="space-between"
+      <div
+      className='md:flex flex-wrap justify-between items-center'
       >
         {exercises.length > 0 && exercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />
         ))}
-      </Stack>
+      </div>
+
       <Stack
       mt="100px"
       alignItems="center"

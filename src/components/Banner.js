@@ -8,12 +8,11 @@ const Banner = (props) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        color: 'white',
-        backgroundColor: 'black',
+        color: 'black',
+        backgroundColor: 'white',
         textAlign: 'center',
         backgroundSize: 'cover', // Ensure the background image covers the entire box
         backgroundPosition: 'right',
-        background: '#111111',
         borderBottom: '1px solid rgb(243 243 243 / 3%)'
     };
 
@@ -33,7 +32,7 @@ const Banner = (props) => {
                 alignItems: 'center'
             }}
             >
-                <hr style={{width: '5%', height: '2px'}} />
+                <hr style={{width: '5%', height: '2px', border: '1px solid black'}} />
                 <Typography
                 sx={{
                     fontSize: "18px",
@@ -43,7 +42,7 @@ const Banner = (props) => {
                 >
                     {props.paragraph}
                 </Typography>
-                <hr style={{width: '5%', height: '2px'}} />
+                <hr style={{width: '5%', height: '2px', border: '1px solid black'}} />
             </Box>
             <Typography
             sx={{
@@ -84,18 +83,18 @@ const Banner = (props) => {
                     width: '24px',
                     borderRadius: '14px',
                     transform: 'none',
-                    border: '2px solid #fff',
+                    border: '2px solid black',
                     margin: 'auto'
                 }}
                 >
                 <div
                     className='wheel'
                     style={{
-                    border: '2px solid #fff',
-                    color: 'white',
+                    border: '2px solid black',
+                    color: 'black',
                     display: 'block',
                     margin: '5px auto',
-                    background: '#fff',
+                    backgroundColor: 'black',
                     position: 'relative',
                     height: '4px',
                     width: '4px',
@@ -110,8 +109,8 @@ const Banner = (props) => {
                 marginTop: '-1px',
                 display: 'block',
                 transform: 'rotate(45deg)',
-                borderRight: '2px solid #fff',
-                borderBottom: '2px solid #fff',
+                borderRight: '2px solid black',
+                borderBottom: '2px solid black',
                 margin: '0 auto 3px auto',
                 width: '16px',
                 height: '16px',
@@ -125,8 +124,8 @@ const Banner = (props) => {
                 marginTop: '-1px',
                 display: 'block',
                 transform: 'rotate(45deg)',
-                borderRight: '2px solid #fff',
-                borderBottom: '2px solid #fff',
+                borderRight: '2px solid black',
+                borderBottom: '2px solid black',
                 margin: '-7px auto 3px auto',
                 width: '16px',
                 height: '16px',
@@ -140,8 +139,8 @@ const Banner = (props) => {
                 marginTop: '-1px',
                 display: 'block',
                 transform: 'rotate(45deg)',
-                borderRight: '2px solid #fff',
-                borderBottom: '2px solid #fff',
+                borderRight: '2px solid black',
+                borderBottom: '2px solid black',
                 margin: '-7px auto 3px auto',
                 width: '16px',
                 height: '16px',

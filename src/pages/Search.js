@@ -23,11 +23,11 @@ const Search = () => {
         setBodyPart={setBodyPart} 
       />
 
-      <Exercises 
+      {/* <Exercises 
         exercises={exercises} 
         setExercises={setExercises} 
         bodyPart={bodyPart} 
-      />
+      /> */}
 
     </>
   )
