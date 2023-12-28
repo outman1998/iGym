@@ -36,6 +36,7 @@ export default function Navbar() {
       />
     </Link>
 
+    { user &&
     <div
     className='flex'
     >
@@ -50,8 +51,9 @@ export default function Navbar() {
       className='text-xl text-[#3A1212]'
       >
         Exslusive
-      </Link>
-    </div>
+      </Link> 
+    </div> }
+
     { user ? 
     <button 
     onClick={logOut} 

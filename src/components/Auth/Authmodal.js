@@ -20,7 +20,6 @@ const style = {
     transform: 'translate(-50%, -50%)',
     width: 400,
     bgcolor: 'background.paper',
-    border: '2px solid #000',
     boxShadow: 24,
     borderRadius: '7px'
 };
@@ -84,27 +83,19 @@ const Authmodal = () => {
   
   return (
     <>
-      <Button 
+      <button 
       onClick={handleOpen}
-      sx={{
-        backgroundColor:'transparent',
-        color: 'white',
-        padding: '10px 35px',
-        borderRadius: '30px',
-        fontWeight: 'bold',
-        border: '1px solid white',
-        cursor: 'pointer'
-      }}
+      className='bg-red-400 hover:bg-red-500 transition-all duration-300 ease-in-out text-white py-2 px-10 rounded-full text-bold cursor-pointer'
       >
         Login
-      </Button>
+      </button>
       <Modal
         open={open}
         onClose={handleClose}
       >
         <Box sx={style}>
             <Box sx={{ width: '100%' }}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                <Box>
                     <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                     <Tab label="Login" />
                     <Tab label="Sign Up" />

@@ -81,14 +81,15 @@ export default function SignUp({handleClose}) {
       fullWidth
       />
 
-      <Button
+      <button
+      className='bg-red-400 text-white p-2 rounded hover:bg-red-500 transition-all duration-300 ease-in-out'
       variant='contained'
       size='large'
       sx={{backgroundColor: '#EEBC1D'}}
       onClick={handleSubmit}
       >
         Sign Up
-      </Button>
+      </button>
     </Box>
   )
 }

@@ -67,14 +67,14 @@ export default function Login({handleClose}) {
       fullWidth
       />
       
-      <Button
+      <button
+      className='bg-red-400 py-2 rounded text-white hover:bg-red-500 transition-all duration-300 ease-in-out'
       variant='contained'
       size='large'
-      sx={{backgroundColor: '#EEBC1D'}}
       onClick={handleSubmit}
       >
         Login
-      </Button>
+      </button>
     </Box>
   )
 }
